@@ -1,0 +1,16 @@
+.contact {
+  .contact-form {
+    h2 {
+      display: block;
+      font-family: 'Grotesk-Bd';
+      font-size: 2.5em;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+      &.note {
+        color: rgba($black, 0.5);
+      }
+    }
+  }
+}

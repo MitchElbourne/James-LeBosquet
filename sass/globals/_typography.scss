@@ -1,0 +1,72 @@
+//@import url("//hello.myfonts.net/count/340b81");
+$fontPath: "../assets/font" !default;
+
+/* Quick Reference
+  font-family: 'Grotesk-BdIt';
+  font-family: 'Grotesk-It';
+  font-family: 'Grotesk-Rg';
+  font-family: 'Grotesk-Lt';
+  font-family: 'Grotesk-Bd';
+  font-family: 'Grotesk-XBd';
+*/
+@font-face {
+  font-family: 'Grotesk-BdIt';
+  src: url('#{$fontPath}/340B81_0_0.eot');
+  src: url('#{$fontPath}/340B81_0_0.eot?#iefix') format('embedded-opentype'),
+  url('#{$fontPath}/340B81_0_0.woff2') format('woff2'),
+  url('#{$fontPath}/340B81_0_0.woff') format('woff'),
+  url('#{$fontPath}/340B81_0_0.ttf') format('truetype'),
+  url('#{$fontPath}/340B81_0_0.svg#wf') format('svg');
+}
+@font-face {
+  font-family: 'Grotesk-It';
+  src: url('assets/font/340B81_1_0.eot');
+  src: url('assets/font/340B81_1_0.eot?#iefix') format('embedded-opentype'),
+  url('assets/font/340B81_1_0.woff2') format('woff2'),
+  url('assets/font/340B81_1_0.woff') format('woff'),
+  url('assets/font/340B81_1_0.ttf') format('truetype'),
+  url('assets/font/340B81_1_0.svg#wf') format('svg');
+}
+@font-face {
+  font-family: 'Grotesk-Rg';
+  src: url('assets/font/340B81_2_0.eot');
+  src: url('assets/font/340B81_2_0.eot?#iefix') format('embedded-opentype'),
+  url('assets/font/340B81_2_0.woff2') format('woff2'),
+  url('assets/font/340B81_2_0.woff') format('woff'),
+  url('assets/font/340B81_2_0.ttf') format('truetype'),
+  url('assets/font/340B81_2_0.svg#wf') format('svg');
+}
+@font-face {
+  font-family: 'Grotesk-Lt';
+  src: url('assets/font/340B81_3_0.eot');
+  src: url('assets/font/340B81_3_0.eot?#iefix') format('embedded-opentype'),
+  url('assets/font/340B81_3_0.woff2') format('woff2'),
+  url('assets/font/340B81_3_0.woff') format('woff'),
+  url('assets/font/340B81_3_0.ttf') format('truetype'),
+  url('assets/font/340B81_3_0.svg#wf') format('svg');
+}
+@font-face {
+  font-family: 'Grotesk-Bd';
+  src: url('assets/font/340B81_4_0.eot');
+  src: url('assets/font/340B81_4_0.eot?#iefix') format('embedded-opentype'),
+  url('assets/font/340B81_4_0.woff2') format('woff2'),
+  url('assets/font/340B81_4_0.woff') format('woff'),
+  url('assets/font/340B81_4_0.ttf') format('truetype'),
+  url('assets/font/340B81_4_0.svg#wf') format('svg');
+}
+@font-face {
+  font-family: 'Grotesk-XBd';
+  src: url('assets/font/340B81_5_0.eot');
+  src: url('assets/font/340B81_5_0.eot?#iefix') format('embedded-opentype'),
+  url('assets/font/340B81_5_0.woff2') format('woff2'),
+  url('assets/font/340B81_5_0.woff') format('woff'),
+  url('assets/font/340B81_5_0.ttf') format('truetype'),
+  url('assets/font/340B81_5_0.svg#wf') format('svg');
+}
+/* System Font Fallback */
+@font-face {
+  font-family: 'system';
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}

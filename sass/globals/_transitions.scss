@@ -1,0 +1,284 @@
+/* --- Home --- */
+.home-bg-appear {
+  opacity: 0.01;
+}
+.home-bg-appear.home-bg-appear-active {
+  opacity: 1;
+  transition: opacity 0.4s linear;
+  transition-delay: 0.2s;
+}
+.home-cta-1-appear {
+  opacity: 0.01;
+}
+.home-cta-1-appear.home-cta-1-appear-active {
+  opacity: 1;
+  transition: opacity 0.25s ease-in;
+  transition-delay: 0.75s;
+}
+.home-cta-2-appear {
+  opacity: 0.01;
+}
+.home-cta-2-appear.home-cta-2-appear-active {
+  opacity: 1;
+  transition: opacity 0.25s ease-in;
+  transition-delay: 1s;
+}
+
+/* --- Navigation --- */
+.brand-appear {
+  opacity: 0.01;
+  transform: translateY(-125px);
+  &.brand-appear-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.25s ease-in,
+                transform 0.5s linear;
+    transition-delay: 0.2s;
+  }
+}
+.nav-1-appear {
+  opacity: 0.01;
+}
+.nav-1-appear.nav-1-appear-active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+  transition-delay: 0.5s;
+}
+.nav-2-appear {
+  opacity: 0.01;
+}
+.nav-2-appear.nav-2-appear-active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+  transition-delay: 0.75s;
+}
+
+/* --- Page Title --- */
+.page-title-appear {
+  opacity: 0.01;
+  transform: translateY(0.75em);
+  &.page-title-appear-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease-out,
+                transform 0.25s linear;
+    transition-delay: 0.5s;
+  }
+}
+
+/* --- Footer --- */
+.footer-appear {
+  opacity: 0.01;
+  transform: translateY(125px);
+  &.footer-appear-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.25s ease-in,
+                transform 0.5s linear;
+    transition-delay: 0.2s;
+  }
+}
+
+/* --- Private Hairstyling --- */
+.styling-text-appear {
+  opacity: 0.01;
+  &.styling-text-appear-active {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+    transition-delay: 0.5s;
+  }
+}
+.styling-form-title-appear {
+  opacity: 0.01;
+  &.styling-form-title-appear-active {
+    opacity: 1;
+    transition: opacity 0.25s ease-in;
+    transition-delay: 0.75s;
+  }
+}
+.styling-form-appear {
+  opacity: 0.01;
+  &.styling-form-appear-active {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+    transition-delay: 1s;
+  }
+}
+.styling-booking-1-appear {
+  opacity: 0.01;
+  transform: translateX(20em);
+  &.styling-booking-1-appear-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.33s ease-out,
+                transform 0.33s ease-in;
+    transition-delay: 0.33s;
+  }
+}
+.styling-booking-2-appear {
+  opacity: 0.01;
+  transform: translateX(20em);
+  &.styling-booking-2-appear-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.33s ease-out,
+                transform 0.33s ease-in;
+    transition-delay: 0.44s;
+  }
+}
+.styling-booking-3-appear {
+  opacity: 0.01;
+  transform: translateX(20em);
+  &.styling-booking-3-appear-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.33s ease-out,
+                transform 0.33s ease-in;
+    transition-delay: 0.55s;
+  }
+}
+.styling-booking-cta-appear {
+  opacity: 0.01;
+  transform: translateY(2em);
+  &.styling-booking-cta-appear-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease-out,
+                transform 0.25s linear;
+    transition-delay: 0.66s;
+  }
+}
+
+/* --- Education --- */
+.education-sub-navigation-appear {
+  opacity: 0.01;
+  transform: translateY(2em);
+  &.education-sub-navigation-appear-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease-out,
+                transform 0.25s linear;
+    transition-delay: 0.66s;
+  }
+}
+.education-content-appear {
+  opacity: 0.01;
+  &.education-content-appear-active {
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+    transition-delay: 1s;
+  }
+}
+.education-content-interior-appear {
+  opacity: 0.01;
+  &.education-content-interior-appear-active {
+    opacity: 1;
+    transition: opacity 1.5s ease-out;
+  }
+}
+
+/* --- Gallery --- */
+.gallery-content-appear {
+  opacity: 0.01;
+  &.gallery-content-appear-active {
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+    transition-delay: 1s;
+  }
+}
+
+/* --- About --- */
+.about-content-appear {
+  opacity: 0.01;
+  &.about-content-appear-active {
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+    transition-delay: 1s;
+  }
+}
+
+/* --- Testimonials --- */
+.testimonials-content-appear {
+  opacity: 0.01;
+  &.testimonials-content-appear-active {
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+    transition-delay: 1s;
+  }
+}
+
+/* --- Contact --- */
+.contact-text-appear {
+  opacity: 0.01;
+  &.contact-text-appear-active {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+    transition-delay: 0.5s;
+  }
+}
+.contact-form-1-appear {
+  opacity: 0.01;
+  transform: translateX(20em);
+  &.contact-form-1-appear-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.33s ease-out,
+                transform 0.33s ease-in;
+    transition-delay: 0.33s;
+  }
+}
+.contact-form-2-appear {
+  opacity: 0.01;
+  transform: translateX(20em);
+  &.contact-form-2-appear-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.33s ease-out,
+                transform 0.33s ease-in;
+    transition-delay: 0.44s;
+  }
+}
+.contact-form-3-appear {
+  opacity: 0.01;
+  transform: translateX(20em);
+  &.contact-form-3-appear-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.33s ease-out,
+                transform 0.33s ease-in;
+    transition-delay: 0.55s;
+  }
+}
+.contact-form-4-appear {
+  opacity: 0.01;
+  transform: translateX(20em);
+  &.contact-form-4-appear-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.33s ease-out,
+                transform 0.33s ease-in;
+    transition-delay: 0.66s;
+  }
+}
+.contact-form-5-appear {
+  opacity: 0.01;
+  transform: translateX(20em);
+  &.contact-form-5-appear-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.33s ease-out,
+                transform 0.33s ease-in;
+    transition-delay: 0.77s;
+  }
+}
+.contact-form-6-appear {
+  opacity: 0.01;
+  transform: translateX(20em);
+  &.contact-form-6-appear-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.33s ease-out,
+                transform 0.33s ease-in;
+    transition-delay: 0.88s;
+  }
+}

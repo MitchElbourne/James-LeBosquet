@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../sass/content/home.css",
+	"sources": [
+		"../sass/content/home.scss"
+	],
+	"sourcesContent": [
+		"h1 {\r\n  color: blue;\r\n}\r\n"
+	],
+	"mappings": ";AAAA,AAAA,EAAE,CAAC;EACD,KAAK,EAAE,IAAK;CACb",
+	"names": []
+}

@@ -1,0 +1,20 @@
+.gallery {
+  .col {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .gallery-content {
+    display: block;
+    width: 100%;
+    img {
+      display: block;
+      max-width: 33.3%;
+      margin: 0 auto;
+      opacity: 0.5;
+    }
+    p {
+      font-size: 1.777em;
+      text-align: center;
+    }
+  }
+}

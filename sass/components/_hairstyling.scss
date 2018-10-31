@@ -1,0 +1,57 @@
+.hairstyling {
+  .col {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .shoutout {
+    font-family: 'Grotesk-Lt';
+    font-size: 2.5em;
+    line-height: 1.36;
+    strong {
+      font-family: 'Grotesk-Bd';
+      font-weight: normal;
+    }
+    p {
+      margin: 0;
+    }
+  }
+  .online-booking {
+    h3 {
+      font-family: 'Grotesk-Bd';
+      font-size: 2.5em;
+      margin: 0.2em 0 1em 0;
+      @media only screen and (max-width : 64em) {
+        margin-top: 2em;
+      }
+    }
+    form {
+      .form-cta {
+        font-family: 'Grotesk-Bd';
+        color: rgba($black, 0.25);
+        background-color: transparent;
+        font-size: 2.2em;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 0.5em 0;
+        display: inline-block;
+        letter-spacing: 0;
+        transition: color 0.33s ease-out;
+        &:hover {
+          color: rgba($black, 1);
+          transition: color 0.33s linear;
+        }
+      }
+      input[type=submit] {
+        float: right;
+      }
+      .icon-arrow-left,
+      .icon-arrow-right {
+        height: 0.75em;
+        color: rgba($black, 0.25);
+      }
+      .note {
+        color: rgba($black, 0.5);
+      }
+    }
+  }
+}

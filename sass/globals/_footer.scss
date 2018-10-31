@@ -1,0 +1,68 @@
+footer.main {
+  color: $black;
+  padding: 0 0 1em;
+  line-height: 1.29;
+
+  .connect-reallife {
+    padding-left: 0;
+    span {
+      display: block;
+      font-family: 'Grotesk-Bd';
+      letter-spacing: 0.25px;
+      font-size: 0.9em;
+      &.site-title {
+        font-size: 1em;
+        margin: 1em 0;
+      }
+      &.contact {
+        margin: 1em 0;
+      }
+    }
+  }
+
+  .connect-digital {
+    margin-top: 1em;
+    padding: 0;
+    .contact-email {
+      display: block;
+      margin: 0 0 0.45em;
+      color: $black;
+      font-family: 'Grotesk-Bd';
+      font-size: 0.85em;
+      letter-spacing: 0.25px;
+      font-size: 1em;
+      transition: color 0.5s ease-out;
+      &:hover, &:focus, &:active {
+        color: rgba($black, 0.5);
+        transition: color 0.33s linear;
+      }
+    }
+    
+    .social {
+      height: 1.5em;
+      @media only screen and (max-width : 64em) {
+        margin-top: 1em;
+      }
+      a {
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        margin: 0 0.75em;
+        transition: opacity 0.5s ease-out;
+        &:nth-of-type(1) {
+          margin-left: 0;
+        }
+        &:hover, &:active, &:focus {
+          opacity: 0.8;
+          margin-top: -0.33em;
+          transition: opacity 0.33s linear;
+        }
+      }
+    }
+  }
+
+  .copyright-credit {
+     margin: 4em 0 1em;
+     font-size: 0.66em;
+  }
+}

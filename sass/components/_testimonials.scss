@@ -1,0 +1,32 @@
+.testimonials {
+  .testimonial {
+    margin: 0 0 2em;
+    h2 {
+      font-family: 'Grotesk-Bd';
+      font-size: 2.5em;
+      margin: 0.5em 0;
+    }
+    h3 {
+      font-family: 'Grotesk-Lt';
+      font-size: 1.33em;
+      letter-spacing: 2px;
+    }
+    p.quote {
+      padding: 0.5em 0;
+      font-family: 'Grotesk-Bd';
+      letter-spacing: 0.5px;
+    }
+    .img-wrapper {
+      img {
+        width: 100%;
+        max-width: 20em;
+        margin-top: 2em;
+      }
+    }
+    @media only screen and (max-width : 768px) {
+      &.wrap-reverse {
+        flex-wrap: wrap-reverse;
+      }
+    }
+  }
+}
