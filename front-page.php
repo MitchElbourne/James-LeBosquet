@@ -1,7 +1,10 @@
 <!-- //The front page for the site is powered by this .php file -->
 
-<?php get_header(); ?>
+<?php get_header();
+while(have_posts()){
+  the_post();
 
+?>
 <div class="stage">
   <main class="home">
     <!-- <img class="home-bg-img" alt="Homepage Background Image" src="<?php echo get_theme_file_uri("assets/images/site-background-loraine.jpg"); ?>" width="590" height="667"> -->
@@ -20,4 +23,8 @@
   </main><!-- home -->
 </div><!-- stage -->
 
-<?php get_footer(); ?>
+<?php }
+
+get_footer();
+
+?>

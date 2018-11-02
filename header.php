@@ -15,17 +15,17 @@
 
         <header class="main">
           <div class="nav-primary">
-            <a class="branding" href="01_00-home.html"><img src="<?php echo get_theme_file_uri("assets/images/jameslebosquet-logo.svg"); ?>" alt="James LeBosquet logo"></a>
+            <a class="branding" href="<?php echo site_url('/'); ?>"><img src="<?php echo get_theme_file_uri("assets/images/jameslebosquet-logo.svg"); ?>" alt="James LeBosquet logo"></a>
             <nav>
               <ul>
-                <li><a href="02_00-hairstyling.html">Private Hairstyling</a></li>
-                <li><a href="03_00-education.html">In Salon Education</a></li>
+                <li><a href="<?php echo site_url('/private-hairstyling'); ?>">Private Hairstyling</a></li>
+                <li><a href="<?php echo site_url('/education'); ?>">In Salon Education</a></li>
               </ul><!-- ul -->
               <ul>
-                <li><a href="04_00-gallery.html">Gallery</a></li>
-                <li><a href="05_00-about.html">About JLB</a></li>
-                <li><a href="06_00-testimonials.html">Testimonials</a></li>
-                <li><a href="07_00-contact.html">Contact</a></li>
+                <li><a href="<?php echo site_url('/gallery'); ?>">Gallery</a></li>
+                <li><a href="<?php echo site_url('/about-jlb'); ?>">About JLB</a></li>
+                <li><a href="<?php echo site_url('/testimonials'); ?>">Testimonials</a></li>
+                <li><a href="<?php echo site_url('/contact'); ?>">Contact</a></li>
               </ul><!-- ul -->
             </nav><!-- nav -->
           </div><!-- nav-primary -->
