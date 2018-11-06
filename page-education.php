@@ -7,9 +7,7 @@ while(have_posts()) {
   <main class="education">
     <div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col">
-        <header>
-          <h2>In Salon Education</h2>
-        </header>
+        <?php get_template_part('template-parts/headertexthr'); ?>
       </div><!-- col -->
     </div><!-- row -->
     <div id="tabs">

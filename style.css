@@ -1371,6 +1371,10 @@ footer.main .copyright-credit {
   text-align: center;
 }
 
+.testimonials .testimonial:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
 .testimonials .testimonial {
   margin: 0 0 2em;
 }
