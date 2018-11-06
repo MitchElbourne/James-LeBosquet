@@ -1206,20 +1206,24 @@ footer.main .copyright-credit {
 
 .education .education-stage .education-landing ul li {
   padding: 0.5em 0;
+  break-inside: avoid-column;
 }
 
 .education .education-stage .education-landing > .row {
   margin-bottom: 4em;
+  justify-content: space-between;
 }
 
 .education .education-stage .education-landing > .row .edu-img {
   display: flex;
 }
 
-@media only screen and (max-width: 64em) {
-  .education .education-stage .education-landing > .row:nth-of-type(2) {
-    flex-wrap: wrap-reverse;
-  }
+.education .education-stage .education-landing > .row:nth-of-type(odd) {
+  flex-direction: row-reverse;
+}
+
+.education .education-stage .education-landing > .row:nth-of-type(odd) img {
+  margin-right: 3rem;
 }
 
 .education .education-stage .education-landing > .row:nth-of-type(4) p.intro {
@@ -1373,6 +1377,12 @@ footer.main .copyright-credit {
 
 .testimonials .testimonial:nth-child(odd) {
   flex-direction: row-reverse;
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimonials .testimonial:nth-child(odd) .imagecolumn {
+  margin: 0;
 }
 
 .testimonials .testimonial {

@@ -1,6 +1,12 @@
 .testimonials {
   .testimonial:nth-child(odd) {
     flex-direction: row-reverse;
+    display: flex;
+    justify-content: space-between;
+
+    .imagecolumn {
+      margin: 0;
+    }
   }
   .testimonial {
     margin: 0 0 2em;

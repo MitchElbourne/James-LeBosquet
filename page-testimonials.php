@@ -32,15 +32,15 @@ while(have_posts()) {
                       <p><?php the_sub_field('testimonial_business'); ?></p>
                       <p class="quote"><?php the_sub_field('testimonial_quote'); ?></p>
                     </div><!--col-->
-                    <div class="col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-12">
-                      <div class="img-wrapper">
                         <?php
                         if ($image) { ?>
-                          <img alt="<?php the_title();  ?>" src="<?php the_sub_field('testimonial_image'); ?>" width="360" height="360">
+                          <div class="col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-12 imagecolumn">
+                            <div class="img-wrapper">
+                              <img alt="<?php the_title();  ?>" src="<?php the_sub_field('testimonial_image'); ?>" width="360" height="360">
+                            </div>
+                          </div><!-- col -->
                         <?php }
                         ?>
-                      </div>
-                    </div><!-- col -->
                   </div><!--row-->
                 <?php
               }
@@ -48,6 +48,7 @@ while(have_posts()) {
           }
         ?>
       </main><!-- hairstyling -->
+      <?php get_template_part('template-parts/breadcrumb'); ?>
     </div><!--stage-->
   <?php }
     get_footer();

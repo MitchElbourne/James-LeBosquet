@@ -1,4 +1,12 @@
 <!-- //The footer for the site is powered by this .php file -->
+<?php
+$links = new WP_Query(array(
+  'post_type' => 'post',
+  'title' => 'Social Media Links'
+));
+$links->the_post();
+
+?>
 
 <footer id="footer" class="main">
   <div class="row bottom-md">
@@ -10,16 +18,16 @@
     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 connect-digital">
       <a class="contact-email" href="mailto:james@jameslebosquet.com">james@jameslebosquet.com</a>
       <div class="social">
-        <a href="javascript:;">
+           <a href="<?php echo get_field('facebook'); ?>">
           <img src="<?php echo get_theme_file_uri("assets/images/social-facebook.svg"); ?>" alt="Icon Facebook">
         </a><!--
-        --><a href="javascript:;">
+        --><a href="<?php echo get_field('instagram'); ?>">
           <img src="<?php echo get_theme_file_uri("assets/images/social-instagram.svg"); ?>" alt="Icon Instagram">
         </a><!--
-        --><a href="javascript:;">
+        --><a href="<?php echo get_field('linked_in'); ?>">
           <img src="<?php echo get_theme_file_uri("assets/images/social-linkedin.svg"); ?>" alt="Icon LinkedIn">
         </a><!--
-        --><a href="javascript:;">
+        --><a href="<?php echo get_field('youtube'); ?>">
           <img src="<?php echo get_theme_file_uri("assets/images/social-youtube.svg"); ?>" alt="Icon YouTube">
         </a>
 

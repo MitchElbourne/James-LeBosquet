@@ -16,17 +16,20 @@
         list-style: none;
         li {
           padding: 0.5em 0;
+          break-inside: avoid-column;
         }
       }
       > .row {
         margin-bottom: 4em;
+        justify-content: space-between;
         .edu-img {
           display: flex;
         }
       }
-      > .row:nth-of-type(2) {
-        @media only screen and (max-width : 64em) {
-          flex-wrap: wrap-reverse;
+      > .row:nth-of-type(odd) {
+        flex-direction: row-reverse;
+        img {
+          margin-right: 3rem;
         }
       }
       > .row:nth-of-type(4) {

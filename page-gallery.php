@@ -7,15 +7,12 @@ while(have_posts()) {
     <main class="gallery">
       <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col">
-          <?php get_template_part('template-parts/headertexthr');
-
-          ?>
+          <?php get_template_part('template-parts/headertexthr'); ?>
         </div><!-- col -->
       </div><!-- row -->
       <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col">
-          <img src="<?php echo get_theme_file_uri("assets/images/icon-scissors.svg"); ?>" alt="Icon Scissors">
-          <p>It's not quite ready yet, check back soon!</p>
+          <?php the_content(); ?>
         </div><!-- col -->
       </div><!-- row -->
     </main><!-- gallery -->
