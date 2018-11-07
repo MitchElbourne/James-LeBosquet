@@ -1,6 +1,5 @@
 <?php //BreadCrumb Navigation Box
-  $image = get_theme_file_uri("/assets/images/education-cta.jpg")
-
+  $image = get_theme_file_uri("/assets/images/education-cta.jpg");
 ?>
 
 <div class="education-cta row">
@@ -8,10 +7,22 @@
   <div class="col-lg-7 col-md-7 col-sm-8 col-xs-12 content">
     <p>We offer different formats for different skill levels. Read more to select a course that fits your plan:</p>
     <ul>
-      <li><a href="<?php echo site_url('/education#50') ?>">Personal Coaching Workshop</a></li><!--
-      --><li><a href="<?php echo site_url('/education#51') ?>">Private Group Training</a></li><!--
-      --><li><a href="<?php echo site_url('/education#52') ?>">Single Day Salon Workshop</a></li><!--
-      --><li><a href="<?php echo site_url('/education#53') ?>">Two Day Salon Workshop</a></li>
+      <?php
+      $Programs = new WP_Query(array(
+        'post_type' => 'program',
+        'order' => 'ASC',
+      ));
+      // Pulls in the programs and lists them in the breadcrumb
+      while($Programs->have_posts()) {
+        $Programs->the_post();
+
+        if (get_the_title() == 'Landing') { ?>
+       <?php } else { ?>
+         <li><a href="/education#<?php the_ID(); ?>"><?php the_title(); ?></a></li>
+       <?php }
+
+      };
+      ?>
     </ul>
   </div><!-- col -->
 </div><!-- row -->

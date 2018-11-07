@@ -1279,61 +1279,6 @@ footer.main .copyright-credit {
   transition: opacity 0.33s linear;
 }
 
-.education-cta {
-  color: #f5f3f1;
-  background-color: #202020;
-  margin: 4em 0;
-}
-
-.education-cta .img-cta {
-  min-height: 20em;
-}
-
-.education-cta .content {
-  padding: 1em 2em;
-  max-width: 40em;
-}
-
-.education-cta .content ul {
-  list-style: none;
-  padding: 0;
-}
-
-.education-cta .content ul li {
-  display: inline-block;
-  width: 50%;
-}
-
-.education-cta .content ul li a {
-  display: block;
-  color: #f5f3f1;
-  font-family: 'Grotesk-Bd';
-  font-size: 1.25em;
-  line-height: 1.5;
-  border-bottom: 2px solid rgba(245, 243, 241, 0.5);
-  padding: 0.5em 0.75em 0.5em 0;
-  margin-right: 2em;
-  text-decoration: none;
-  transition: all 0.5s ease-out;
-}
-
-.education-cta .content ul li a:hover, .education-cta .content ul li a:focus, .education-cta .content ul li a:active {
-  padding-left: 0.5em;
-  padding-right: 0.25em;
-  background-color: rgba(245, 243, 241, 0.5);
-  transition: background-color 0.5s linear, padding-left 0.33s ease-in, padding-right 0.33s ease-in;
-}
-
-@media only screen and (max-width: 30em) {
-  .education-cta .content ul li {
-    display: block;
-    width: 100%;
-  }
-  .education-cta .content ul li a {
-    margin-right: 0;
-  }
-}
-
 .gallery .col {
   padding-left: 0;
   padding-right: 0;
@@ -1432,6 +1377,70 @@ footer.main .copyright-credit {
 
 .contact .contact-form p.note {
   color: rgba(32, 32, 32, 0.5);
+}
+
+.education-cta {
+  color: #f5f3f1;
+  background-color: #202020;
+  margin: 4em 0;
+}
+
+.education-cta .img-cta {
+  min-height: 20em;
+}
+
+.education-cta .content {
+  padding: 1em 2em;
+  max-width: 40em;
+}
+
+.education-cta .content ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.education-cta .content ul li {
+  display: inline-block;
+  width: 45%;
+  border-bottom: 2px solid rgba(245, 243, 241, 0.5);
+  margin: 0 1rem 0 1rem;
+}
+
+.education-cta .content ul li a {
+  display: block;
+  color: #f5f3f1;
+  font-family: 'Grotesk-Bd';
+  font-size: 1.25em;
+  line-height: 1.5;
+  padding: 0.5em 0.75em 0.5em 0;
+  margin-right: 2em;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+}
+
+.education-cta .content ul li a:hover, .education-cta .content ul li a:focus, .education-cta .content ul li a:active {
+  padding-left: 0.5em;
+  padding-right: 0.25em;
+  background-color: rgba(245, 243, 241, 0.5);
+  transition: background-color 0.5s linear, padding-left 0.33s ease-in, padding-right 0.33s ease-in;
+}
+
+@media only screen and (max-width: 30em) {
+  .education-cta .content ul li {
+    display: block;
+    width: 100%;
+  }
+  .education-cta .content ul li a {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .education-cta .content ul li {
+    width: 100%;
+  }
 }
 
 /* --- Globals --*/
