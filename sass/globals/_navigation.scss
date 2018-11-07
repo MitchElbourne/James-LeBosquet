@@ -67,4 +67,19 @@
       }
     }
   }
+  @media only screen and (max-width: 970px) {
+    ul {
+      flex-wrap: wrap;
+      li {
+        min-width: 50%;
+      }
+    }
+  }
+  @media only screen and (max-width: 740px) {
+    ul {
+      li {
+        min-width: 100%;
+      }
+    }
+  }
 }

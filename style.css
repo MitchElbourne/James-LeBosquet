@@ -947,6 +947,21 @@ form input[type="submit"]:active {
   transition: background-color 0.33s linear;
 }
 
+@media only screen and (max-width: 970px) {
+  .sub-navigation ul {
+    flex-wrap: wrap;
+  }
+  .sub-navigation ul li {
+    min-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .sub-navigation ul li {
+    min-width: 100%;
+  }
+}
+
 header.main {
   height: 100%;
   max-height: 150px;
@@ -1212,9 +1227,6 @@ footer.main .copyright-credit {
 .education .education-stage .education-landing > .row {
   margin-bottom: 4em;
   justify-content: space-between;
-}
-
-.education .education-stage .education-landing > .row .edu-img {
   display: flex;
 }
 
@@ -1222,12 +1234,18 @@ footer.main .copyright-credit {
   flex-direction: row-reverse;
 }
 
-.education .education-stage .education-landing > .row:nth-of-type(odd) img {
-  margin-right: 3rem;
-}
-
 .education .education-stage .education-landing > .row:nth-of-type(4) p.intro {
   margin-top: 2em;
+}
+
+@media only screen and (max-width: 768px) {
+  .education .education-stage .education-landing .img-wrapper img {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+  .education .education-stage .education-landing .landing-bottom img {
+    max-width: 100%;
+  }
 }
 
 .education .education-course h1 {

@@ -65,7 +65,7 @@ while(have_posts()) {
                 while(have_rows('landing_bottom')) {
                   the_row();
                   ?>
-                  <div class="row">
+                  <div class="row landing-bottom">
                     <div class="row start-sm">
                       <div class="img-wrapper col-8">
                         <img src="<?php the_sub_field('landing_bottom_image'); ?>" alt="In Salon Image - James Cutting">

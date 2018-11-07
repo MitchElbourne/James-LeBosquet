@@ -7,7 +7,6 @@
     border-bottom: 0;
     margin-bottom: 0;
   }
-
   .education-stage {
     .education-landing {
       ul {
@@ -22,19 +21,27 @@
       > .row {
         margin-bottom: 4em;
         justify-content: space-between;
-        .edu-img {
-          display: flex;
-        }
+        display: flex;
       }
       > .row:nth-of-type(odd) {
         flex-direction: row-reverse;
-        img {
-          margin-right: 3rem;
-        }
       }
       > .row:nth-of-type(4) {
         p.intro {
           margin-top: 2em;
+        }
+      }
+      @media only screen and (max-width: 768px) {
+        .img-wrapper {
+          img {
+            max-width: 60%;
+            margin: 0 auto;
+          }
+        }
+        .landing-bottom {
+          img {
+            max-width: 100%;
+          }
         }
       }
     }
