@@ -19,8 +19,13 @@ function website_features() {
   add_image_size('Medium-small', 400, 400, true);
 }
 
+register_nav_menus( array(
+	'primary' => __( 'Primary Menu', 'NavBar' ),
+) );
 
 add_action('after_setup_theme', 'website_features');
 
 add_action('wp_enqueue_scripts', 'jamesLBRequirements');
+
+require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 ?>

@@ -13,19 +13,23 @@
     <div id="root">
       <div class="app container-fluid">
         <header class="main">
-          <div class="nav-primary">
-            <a class="branding" href="<?php echo site_url('/'); ?>"><img src="<?php echo get_theme_file_uri("assets/images/jameslebosquet-logo.svg"); ?>" alt="James LeBosquet logo"></a>
-            <nav>
-              <ul>
-                <li><a href="<?php echo site_url('/private-hairstyling'); ?>" <?php if (is_page('private-hairstyling')) echo 'class="active"' ?>>Private Hairstyling</a></li>
-                <li><a href="<?php echo site_url('/education'); ?>" <?php if (is_page('education')) echo 'class="active"' ?>>In Salon Education</a></li>
-              </ul><!-- ul -->
-              <ul>
-                <li><a href="<?php echo site_url('/gallery'); ?>" <?php if (is_page('gallery')) echo 'class="active"' ?>>Gallery</a></li>
-                <li><a href="<?php echo site_url('/about-jlb'); ?>" <?php if (is_page('about-jlb')) echo 'class="active"' ?>>About JLB</a></li>
-                <li><a href="<?php echo site_url('/testimonials'); ?>" <?php if (is_page('testimonials')) echo 'class="active"' ?>>Testimonials</a></li>
-                <li><a href="<?php echo site_url('/contact'); ?>" <?php if (is_page('contact')) echo 'class="active"' ?>>Contact</a></li>
-              </ul><!-- ul -->
-            </nav><!-- nav -->
-          </div><!-- nav-primary -->
+          <nav class="navbar navbar-expand-lg nav-primary" role="navigation">
+          	<!-- Brand and toggle get grouped for better mobile display -->
+            <a class="branding navbar-brand" href="<?php echo site_url('/'); ?>"><img src="<?php echo get_theme_file_uri("assets/images/jameslebosquet-logo.svg"); ?>" alt="James LeBosquet logo"></a>
+          	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
+          		<span><img src="<?php echo get_theme_file_uri('assets/images/navbarIcon.svg'); ?>"/></span>
+          	</button>
+          		<?php
+          		wp_nav_menu( array(
+          			'theme_location'    => 'primary',
+          			'depth'             => 2,
+          			'container'         => 'div',
+          			'container_class'   => 'collapse navbar-collapse',
+          			'container_id'      => 'bs-example-navbar-collapse-1',
+          			'menu_class'        => 'nav navbar-nav',
+          			'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+          			'walker'            => new WP_Bootstrap_Navwalker(),
+          		) );
+          		?>
+          </nav>
         </header><!-- header -->

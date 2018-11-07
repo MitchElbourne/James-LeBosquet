@@ -1119,31 +1119,42 @@ header.main {
   z-index: 98;
 }
 
-header.main .nav-primary {
-  height: 100%;
+header.main .navbar {
   display: flex;
+  justify-content: space-between;
 }
 
-header.main .nav-primary .branding {
+header.main .navbar .branding {
   flex: 0 0 auto;
+  margin: 0 auto 0 0;
   display: inline-block;
   width: 150px;
   height: 150px;
   transition: opacity 0.33s ease-out;
 }
 
-header.main .nav-primary .branding:hover {
+header.main .navbar .branding:hover {
   opacity: 0.9;
   transition: opacity 1s ease-out;
 }
 
-header.main .nav-primary .branding a {
-  display: block;
-  height: 100%;
+header.main .navbar ul {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 0 0 auto;
+  max-width: 46rem;
 }
 
-header.main .nav-primary .branding a:hover {
-  text-decoration: none;
+header.main .navbar ul li {
+  padding: 0 1.55em 1.3rem 1.55em;
+}
+
+header.main .navbar ul li a {
+  text-transform: uppercase;
+  color: #202020;
+  font-family: 'Grotesk-Lt';
+  letter-spacing: 2px;
+  white-space: nowrap;
 }
 
 footer.main {
