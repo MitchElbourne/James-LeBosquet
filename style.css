@@ -869,6 +869,157 @@ form input[type="submit"]:active {
   transition-delay: 0.88s;
 }
 
+/* --- Globals --*/
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: #202020;
+  background-color: #f5f3f1;
+  font-family: "Grotesk-Rg", "system", sans-serif;
+  font-size: 18px;
+}
+
+/* --- Core Architecture --- */
+html {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+html body {
+  height: 100%;
+}
+
+html body #root {
+  height: 100%;
+}
+
+html body #root .app {
+  height: 100%;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-bg-img {
+  position: fixed;
+  height: 100%;
+  top: 8em;
+  right: 0;
+  z-index: -1;
+  transition: opacity 0.66s linear;
+}
+
+@media only screen and (max-width: 64em) {
+  .home-bg-img {
+    opacity: 0.66;
+    transition: opacity 1s linear;
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  .home-bg-img {
+    opacity: 0.33;
+    transition: opacity 1s linear;
+  }
+}
+
+header {
+  flex: 0 0 auto;
+}
+
+.stage {
+  flex: 1 1 auto;
+}
+
+footer {
+  flex: 0 0 auto;
+}
+
+/* --- Typography Overrides --- */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  outline: 0;
+}
+
+/* --- React-Flexbox-Grid Overrides --- */
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* --- Global Style --- */
+main {
+  padding: 4em 0;
+}
+
+main header {
+  border-bottom: 1px solid #202020;
+  margin: 0 0 2em 0;
+}
+
+main header h2 {
+  font-family: 'Grotesk-Lt';
+  font-size: 1.2em;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0.25em 0;
+}
+
+main p.intro {
+  font-family: 'Grotesk-Bd';
+  font-size: 1.33em;
+  line-height: 1.5;
+}
+
+main p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+main a {
+  color: rgba(32, 32, 32, 0.5);
+  font-family: 'Grotesk-Bd';
+  letter-spacing: 1px;
+  text-decoration: underline;
+  transition: color 0.5s ease-out;
+}
+
+main a:hover, main a:focus, main a:active {
+  color: #202020;
+  transition: color 0.25s linear;
+}
+
+main ul li {
+  padding: 0.25em 0;
+  line-height: 1.4;
+}
+
+main .img-wrapper {
+  width: 100%;
+}
+
+main .img-wrapper img {
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 .nav-primary nav {
   flex: 1 1 auto;
   display: flex;
@@ -989,6 +1140,10 @@ header.main .nav-primary .branding:hover {
 header.main .nav-primary .branding a {
   display: block;
   height: 100%;
+}
+
+header.main .nav-primary .branding a:hover {
+  text-decoration: none;
 }
 
 footer.main {
@@ -1230,6 +1385,11 @@ footer.main .copyright-credit {
   display: flex;
 }
 
+.education .education-stage .education-landing > .row .edu-content {
+  align-self: center;
+  padding: 0;
+}
+
 .education .education-stage .education-landing > .row:nth-of-type(odd) {
   flex-direction: row-reverse;
 }
@@ -1246,6 +1406,14 @@ footer.main .copyright-credit {
   .education .education-stage .education-landing .landing-bottom img {
     max-width: 100%;
   }
+}
+
+.education .education-stage .education-landing .bottom-content {
+  margin: 0 0 0 auto;
+}
+
+.education .education-stage .education-landing .bottom-image {
+  width: 100%;
 }
 
 .education .education-course h1 {
@@ -1350,6 +1518,10 @@ footer.main .copyright-credit {
 
 .testimonials .testimonial {
   margin: 0 0 2em;
+}
+
+.testimonials .testimonial .content {
+  align-self: center;
 }
 
 .testimonials .testimonial h2 {
@@ -1459,151 +1631,4 @@ footer.main .copyright-credit {
   .education-cta .content ul li {
     width: 100%;
   }
-}
-
-/* --- Globals --*/
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-body {
-  color: #202020;
-  background-color: #f5f3f1;
-  font-family: "Grotesk-Rg", "system", sans-serif;
-  font-size: 18px;
-}
-
-/* --- Core Architecture --- */
-html {
-  height: 100%;
-  overflow-y: scroll;
-}
-
-html body {
-  height: 100%;
-}
-
-html body #root {
-  height: 100%;
-}
-
-html body #root .app {
-  height: 100%;
-  max-width: 1440px;
-  display: flex;
-  flex-direction: column;
-}
-
-.home-bg-img {
-  position: fixed;
-  height: 100%;
-  top: 8em;
-  right: 0;
-  z-index: -1;
-  transition: opacity 0.66s linear;
-}
-
-@media only screen and (max-width: 64em) {
-  .home-bg-img {
-    opacity: 0.66;
-    transition: opacity 1s linear;
-  }
-}
-
-@media only screen and (max-width: 48em) {
-  .home-bg-img {
-    opacity: 0.33;
-    transition: opacity 1s linear;
-  }
-}
-
-header {
-  flex: 0 0 auto;
-}
-
-.stage {
-  flex: 1 1 auto;
-}
-
-footer {
-  flex: 0 0 auto;
-}
-
-/* --- Typography Overrides --- */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
-}
-
-a {
-  text-decoration: none;
-  outline: 0;
-}
-
-/* --- React-Flexbox-Grid Overrides --- */
-.row {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-/* --- Global Style --- */
-main {
-  padding: 4em 0;
-}
-
-main header {
-  border-bottom: 1px solid #202020;
-  margin: 0 0 2em 0;
-}
-
-main header h2 {
-  font-family: 'Grotesk-Lt';
-  font-size: 1.2em;
-  line-height: 1.5;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin: 0.25em 0;
-}
-
-main p.intro {
-  font-family: 'Grotesk-Bd';
-  font-size: 1.33em;
-  line-height: 1.5;
-}
-
-main p {
-  font-size: 1em;
-  line-height: 1.5;
-}
-
-main a {
-  color: rgba(32, 32, 32, 0.5);
-  font-family: 'Grotesk-Bd';
-  letter-spacing: 1px;
-  text-decoration: underline;
-  transition: color 0.5s ease-out;
-}
-
-main a:hover, main a:focus, main a:active {
-  color: #202020;
-  transition: color 0.25s linear;
-}
-
-main ul li {
-  padding: 0.25em 0;
-  line-height: 1.4;
-}
-
-main .img-wrapper {
-  width: 100%;
-}
-
-main .img-wrapper img {
-  margin: 0 auto;
-  display: block;
-  max-width: 100%;
-  height: auto;
 }

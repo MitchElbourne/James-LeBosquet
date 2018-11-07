@@ -11,7 +11,7 @@ while(have_posts()) {
       </div><!-- col -->
     </div><!-- row -->
     <div class="about-content">
-      <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+      <div class="container col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
         <div class="img-wrapper">
           <img class="jlb-profile-pic" src="<?php echo get_theme_file_uri('assets/images/jlb-profile-pic.png'); ?>" alt="JamesLB Circular Image" width="362" height="362">
         </div>

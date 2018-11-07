@@ -22,6 +22,10 @@
         margin-bottom: 4em;
         justify-content: space-between;
         display: flex;
+        .edu-content {
+          align-self: center;
+          padding: 0;
+        }
       }
       > .row:nth-of-type(odd) {
         flex-direction: row-reverse;
@@ -43,6 +47,12 @@
             max-width: 100%;
           }
         }
+      }
+      .bottom-content {
+        margin: 0 0 0 auto;
+      }
+      .bottom-image {
+        width: 100%;
       }
     }
   }

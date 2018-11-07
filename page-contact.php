@@ -12,7 +12,7 @@ while(have_posts()) {
       </div><!-- row -->
       <div class="contact-form">
         <div class="row">
-          <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+          <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 container">
             <div class="animation-wrapper">
               <h2>Have any questions or comments?<br>Give me a shout using the form below, and I'll be sure to be in touch soon.</h2>
               <p class="note">*Please fill in all the required fields.</p>

@@ -4,7 +4,7 @@ while(have_posts()) {
 ?>
 <div id="root">
 
-  <div class="app container-fluid">
+  <div class="app">
     <div class="stage">
       <main class="testimonials">
         <div class="row">
@@ -26,7 +26,7 @@ while(have_posts()) {
                 the_row();
                 $image = get_sub_field('testimonial_image') ?>
                   <div class="testimonial row">
-                    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 content">
                       <h2><?php the_title(); ?></h2>
                       <h3><?php the_sub_field('testimonial_title'); ?></h3>
                       <p><?php the_sub_field('testimonial_business'); ?></p>

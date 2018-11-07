@@ -52,7 +52,7 @@ while(have_posts()) {
                           <img src="<?php the_sub_field('landing_image'); ?>">
                         </div>
                       </div><!-- col -->
-                      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 edu-content">
                         <p class="intro"><?php the_sub_field('landing_title'); ?></p>
                         <p><?php the_sub_field('landing_text'); ?></p>
                       </div><!--col-->
@@ -66,13 +66,13 @@ while(have_posts()) {
                   the_row();
                   ?>
                   <div class="row landing-bottom">
-                    <div class="row start-sm">
+                    <div class="row start-sm bottom-image">
                       <div class="img-wrapper col-8">
                         <img src="<?php the_sub_field('landing_bottom_image'); ?>" alt="In Salon Image - James Cutting">
                       </div>
                     </div><!-- row -->
                     <div class="row">
-                      <div class="col-lg-7 col-lg-offset-5 col-md-7 col-md-offset-5 col-sm-10 col-sm-offset-1 col-xs-12">
+                      <div class="col-lg-7 col-lg-offset-5 col-md-7 col-md-offset-5 col-sm-10 col-sm-offset-1 col-xs-12 bottom-content">
                         <p class="intro"><?php the_sub_field('landing_bottom_title'); ?></p>
                         <?php the_sub_field('landing_bottom_text'); ?>
                       </div><!-- col -->
@@ -86,7 +86,7 @@ while(have_posts()) {
         <?php } else { ?>
           <div id="<?php the_ID(); ?>" class="education-course">
             <div class="row">
-              <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+              <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 container">
                 <h1> <?php the_title(); ?></h1>
                 <h3>Details</h3>
                 <p class="intro"><?php the_field('course_title'); ?></p>
