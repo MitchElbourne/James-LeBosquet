@@ -12,7 +12,6 @@
   <body>
     <div id="root">
       <div class="app container-fluid">
-
         <header class="main">
           <div class="nav-primary">
             <a class="branding" href="<?php echo site_url('/'); ?>"><img src="<?php echo get_theme_file_uri("assets/images/jameslebosquet-logo.svg"); ?>" alt="James LeBosquet logo"></a>
