@@ -1130,9 +1130,6 @@ header.main .navbar .menu-text {
 }
 
 header.main .navbar .branding {
-  flex: 0 0 auto;
-  margin: 0 auto 0 0;
-  display: inline-block;
   width: 150px;
   height: 150px;
   transition: opacity 0.33s ease-out;
@@ -1160,6 +1157,12 @@ header.main .navbar ul li a {
   font-family: 'Grotesk-Lt';
   letter-spacing: 2px;
   white-space: nowrap;
+  transition: opacity 0.33s ease-out;
+}
+
+header.main .navbar ul li:hover, header.main .navbar ul li.active {
+  opacity: 0.3;
+  transition: opacity 1s ease-out;
 }
 
 @media only screen and (max-width: 992px) {

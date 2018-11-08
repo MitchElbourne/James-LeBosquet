@@ -13,9 +13,6 @@ header.main {
 
     }
     .branding {
-      flex: 0 0 auto;
-      margin: 0 auto 0 0;
-      display: inline-block;
       width: 150px;
       height: 150px;
       transition: opacity 0.33s ease-out;
@@ -27,7 +24,6 @@ header.main {
     ul {
       display: flex;
       justify-content: flex-end;
-      // flex-direction: row-reverse;
       margin: 0 0 0 auto;
       max-width: 46rem;
       li {
@@ -38,6 +34,11 @@ header.main {
           font-family: 'Grotesk-Lt';
           letter-spacing: 2px;
           white-space: nowrap;
+          transition: opacity 0.33s ease-out;
+        }
+        &:hover, &.active {
+          opacity: 0.3;
+          transition: opacity 1s ease-out;
         }
       }
     }
