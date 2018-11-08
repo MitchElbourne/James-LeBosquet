@@ -32,13 +32,11 @@ while(have_posts()) {
           ?>
         </ul>
       </nav><!-- sub-navigation -->
-
       <div class="education-stage">
       <?php
 
       while ($Programs->have_posts()) {
         $Programs->the_post();
-
         if (get_the_title() == 'Landing') { ?>
           <div id="<?php the_ID(); ?>" class="education-landing">
             <?php
@@ -99,7 +97,10 @@ while(have_posts()) {
                   <h2>Let's get started!</h2>
                   <p class="intro">Contact me to kick things off. This will be more fun than you think!</p>
                   <p class="note">*Please fill in all the required fields.</p>
-                  <?php the_content(); ?>
+                  <?php
+                  $form = `'`. get_field('course_form'). `'`;
+                  echo do_shortcode($form);
+                  ?>
                 </div><!-- col -->
               </div><!-- row -->
             </div><!-- form -->
