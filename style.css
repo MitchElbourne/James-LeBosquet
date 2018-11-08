@@ -495,6 +495,11 @@ form .formgroup {
   margin: 0 0 1em;
 }
 
+form .formgroup .wpcf7-not-valid-tip {
+  color: rgba(255, 0, 0, 0.7);
+  font-family: 'Grotesk-Bd';
+}
+
 form label {
   display: block;
   width: 100%;
@@ -519,6 +524,7 @@ form input[type="tel"] {
 
 form textarea {
   width: 100%;
+  height: 8rem;
   display: block;
   color: #202020;
   background: transparent;
@@ -550,6 +556,12 @@ form input[type="submit"]:active {
   color: #f5f3f1;
   background: #202020;
   transition: color 0.33s linear, background 0.33s linear;
+}
+
+form .wpcf7-response-output {
+  border: 2px solid rgba(32, 32, 32, 0.6);
+  font-family: 'Grotesk-Bd';
+  margin: 1rem 0 0 0;
 }
 
 /* --- Home --- */
@@ -1558,7 +1570,7 @@ footer.main .copyright-credit {
 
 .testimonials .testimonial {
   justify-content: space-between;
-  margin: 0 0 2em;
+  margin: 0 0 2em 0;
 }
 
 .testimonials .testimonial .content {

@@ -93,6 +93,16 @@ while(have_posts()) {
                 <?php the_field('course_field'); ?>
               </div><!-- col -->
             </div><!-- row -->
+            <div class="education-form">
+              <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 container">
+                  <h2>Let's get started!</h2>
+                  <p class="intro">Contact me to kick things off. This will be more fun than you think!</p>
+                  <p class="note">*Please fill in all the required fields.</p>
+                  <?php the_content(); ?>
+                </div><!-- col -->
+              </div><!-- row -->
+            </div><!-- form -->
           </div><!-- education course -->
         <?php }
       } ?>

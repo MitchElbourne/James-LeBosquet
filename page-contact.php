@@ -17,29 +17,7 @@ while(have_posts()) {
               <h2>Have any questions or comments?<br>Give me a shout using the form below, and I'll be sure to be in touch soon.</h2>
               <p class="note">*Please fill in all the required fields.</p>
             </div>
-            <form>
-              <div class="formgroup row">
-                <span><label for="name">Your name*</label></span>
-                <input type="text" name="name">
-              </div>
-              <div class="formgroup row">
-                <span><label for="email">Your email*</label></span>
-                <input type="email" name="email">
-              </div>
-              <div class="formgroup row">
-                <span><label for="tel">Your number</label></span>
-                <input type="tel" name="tel">
-              </div>
-              <div class="formgroup row">
-                <span><label for="subject">Subject</label></span>
-                <input type="text" name="subject">
-              </div>
-              <div class="formgroup row">
-                <span><label for="message">Your message*</label></span>
-                <textarea></textarea>
-              </div>
-              <div class="contact-submit row"><input type="submit" value="Send Message"></div>
-            </form><!-- form -->
+              <?php the_content(); ?>
           </div><!-- col -->
         </div><!-- row -->
       </div><!-- contact-form -->
