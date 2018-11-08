@@ -1130,6 +1130,7 @@ header.main .navbar .menu-text {
 }
 
 header.main .navbar .branding {
+  padding: 0;
   width: 150px;
   height: 150px;
   transition: opacity 0.33s ease-out;
@@ -1593,8 +1594,16 @@ footer.main .copyright-credit {
 }
 
 @media only screen and (max-width: 768px) {
-  .testimonials .testimonial.wrap-reverse {
-    flex-wrap: wrap-reverse;
+  .testimonials .testimonial {
+    flex-direction: column-reverse;
+  }
+  .testimonials .testimonial:nth-child(odd) {
+    flex-direction: column-reverse;
+    display: flex;
+    justify-content: space-between;
+  }
+  .testimonials .testimonial:nth-child(odd) .imagecolumn {
+    margin: 0;
   }
 }
 

@@ -3,7 +3,6 @@
     flex-direction: row-reverse;
     display: flex;
     justify-content: space-between;
-
     .imagecolumn {
       margin: 0;
     }
@@ -35,10 +34,16 @@
         margin-top: 2em;
       }
     }
-    @media only screen and (max-width : 768px) {
-      &.wrap-reverse {
-        flex-wrap: wrap-reverse;
+    @media only screen and (max-width: 768px) {
+      flex-direction: column-reverse;
+      &:nth-child(odd) {
+        flex-direction: column-reverse;
+        display: flex;
+        justify-content: space-between;
+        .imagecolumn {
+          margin: 0;
         }
+      }
     }
   }
 }
