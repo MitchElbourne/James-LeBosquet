@@ -47,12 +47,12 @@ while(have_posts()) {
                   the_row();
                   ?>
                     <div class="row middle-sm">
-                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 edu-img">
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 edu-img">
                         <div class="img-wrapper">
                           <img src="<?php the_sub_field('landing_image'); ?>">
                         </div>
                       </div><!-- col -->
-                      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 edu-content">
+                      <div class="col-lg-5 col-md-5 col-sm-10 col-xs-12 edu-content">
                         <p class="intro"><?php the_sub_field('landing_title'); ?></p>
                         <p><?php the_sub_field('landing_text'); ?></p>
                       </div><!--col-->
@@ -72,7 +72,7 @@ while(have_posts()) {
                       </div>
                     </div><!-- row -->
                     <div class="row">
-                      <div class="col-lg-7 col-lg-offset-5 col-md-7 col-md-offset-5 col-sm-10 col-sm-offset-1 col-xs-12 bottom-content">
+                      <div class="col-lg-7 col-lg-offset-5 col-md-7 col-md-offset-5 col-sm-10 col-xs-12 bottom-content">
                         <p class="intro"><?php the_sub_field('landing_bottom_title'); ?></p>
                         <?php the_sub_field('landing_bottom_text'); ?>
                       </div><!-- col -->

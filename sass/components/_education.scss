@@ -27,6 +27,12 @@
           padding: 0;
         }
       }
+      .bottom-content {
+        margin: 0 0 0 auto;
+      }
+      .bottom-image {
+        width: 100%;
+      }
       > .row:nth-of-type(odd) {
         flex-direction: row-reverse;
       }
@@ -36,23 +42,31 @@
         }
       }
       @media only screen and (max-width: 768px) {
-        .img-wrapper {
-          img {
-            max-width: 60%;
-            margin: 0 auto;
+        .row {
+          margin-bottom: 0;
+          justify-content: center;
+          .edu-content {
+            margin: 1rem 0 1rem 0;
+          }
+          .edu-img {
+            img {
+              width: 50%;
+              margin: 0 auto;
+            }
+          }
+          .landing-bottom {
+            img {
+              max-width: 100%;
+            }
           }
         }
-        .landing-bottom {
-          img {
-            max-width: 100%;
-          }
+        .bottom-content {
+          margin: 0;
+          padding: 0;
         }
-      }
-      .bottom-content {
-        margin: 0 0 0 auto;
-      }
-      .bottom-image {
-        width: 100%;
+        .bottom-image {
+          width: 100%;
+        }
       }
     }
   }
