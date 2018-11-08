@@ -22,9 +22,6 @@ while(have_posts()) {
           $form = `'`. get_field('online_booking_form') . `'`;
           echo do_shortcode($form);
         ?>
-        <div class="buttons">
-          <button id="btn-next" class="form1">Next</button>
-        </div>
       </div><!-- col -->
     </div><!-- row -->
   </main><!-- hairstyling -->

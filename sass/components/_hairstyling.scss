@@ -26,6 +26,43 @@
     }
 
     form {
+      .formgroup {
+        display: flex;
+        flex-direction: column;
+
+      }
+      select {
+        display: block;
+        border: none;
+        padding: 0;
+        background-color: rgba($white, 0);
+        font-family: 'Grotesk-Rg';
+        font-size: 2.5rem;
+        color: rgba($black, 0.25);
+      }
+      .buttons {
+        display: flex;
+        justify-content: space-between;
+        input[type="submit"], .btn {
+          padding: 0;
+          color: rgba($black, 0.25);
+          background-color: rgba($white, 0);
+          font-size: 2.5rem;
+          font-family: 'Grotesk-Bd';
+          line-height: 1.36;
+          letter-spacing: normal;
+          text-transform: uppercase;
+          height: auto;
+          width: auto;
+          .tick {
+            font-family: 'Grotesk';
+            font-size: 3rem;
+          }
+        }
+        #btn-next {
+          margin-top: -0.3rem;
+        }
+      }
       .inactive {
         display: none;
       }

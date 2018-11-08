@@ -14,16 +14,12 @@ class OnlineBookingEnquiry {
     if (this.isOnForm1) {
       this.form1.addClass("inactive");
       this.form2.removeClass("inactive");
-      jQuery('.buttons #btn-next').text("Back");
-      console.log(this.form1);
       this.isOnForm1 = false;
     } else if (!this.isOnForm1) {
       this.form1.removeClass("inactive");
       this.form2.addClass("inactive");
-      jQuery('.buttons #btn-next').text("Next");
       this.isOnForm1 = true;
     }
-
   }
 }
 

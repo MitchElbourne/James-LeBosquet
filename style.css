@@ -511,7 +511,8 @@ form label {
 
 form input[type="text"],
 form input[type="email"],
-form input[type="tel"] {
+form input[type="tel"],
+form input[type='select'] {
   display: block;
   width: 100%;
   color: #202020;
@@ -1367,6 +1368,48 @@ footer.main .copyright-credit {
   .hairstyling .online-booking h3 {
     margin-top: 2em;
   }
+}
+
+.hairstyling .online-booking form .formgroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.hairstyling .online-booking form select {
+  display: block;
+  border: none;
+  padding: 0;
+  background-color: rgba(245, 243, 241, 0);
+  font-family: 'Grotesk-Rg';
+  font-size: 2.5rem;
+  color: rgba(32, 32, 32, 0.25);
+}
+
+.hairstyling .online-booking form .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hairstyling .online-booking form .buttons input[type="submit"], .hairstyling .online-booking form .buttons .btn {
+  padding: 0;
+  color: rgba(32, 32, 32, 0.25);
+  background-color: rgba(245, 243, 241, 0);
+  font-size: 2.5rem;
+  font-family: 'Grotesk-Bd';
+  line-height: 1.36;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  height: auto;
+  width: auto;
+}
+
+.hairstyling .online-booking form .buttons input[type="submit"] .tick, .hairstyling .online-booking form .buttons .btn .tick {
+  font-family: 'Grotesk';
+  font-size: 3rem;
+}
+
+.hairstyling .online-booking form .buttons #btn-next {
+  margin-top: -0.3rem;
 }
 
 .hairstyling .online-booking form .inactive {

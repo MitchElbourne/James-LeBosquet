@@ -18,7 +18,8 @@ form {
   }
   input[type="text"],
   input[type="email"],
-  input[type="tel"] {
+  input[type="tel"],
+  input[type='select'] {
     display: block;
     width: 100%;
     color: $black;
