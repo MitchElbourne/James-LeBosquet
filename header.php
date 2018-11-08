@@ -16,16 +16,16 @@
           <nav class="navbar navbar-expand-lg nav-primary" role="navigation">
           	<!-- Brand and toggle get grouped for better mobile display -->
             <a class="branding navbar-brand" href="<?php echo site_url('/'); ?>"><img src="<?php echo get_theme_file_uri("assets/images/jameslebosquet-logo.svg"); ?>" alt="James LeBosquet logo"></a>
-          	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
-          		<span><img src="<?php echo get_theme_file_uri('assets/images/navbarIcon.svg'); ?>"/></span>
+          	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          		<span class="menu-text"><img class="menu-icon" src="<?php echo get_theme_file_uri('assets/images/navbarIcon.svg'); ?>" alt="Navigation Icon" />Menu</span>
           	</button>
           		<?php
           		wp_nav_menu( array(
           			'theme_location'    => 'primary',
-          			'depth'             => 2,
+          			'depth'             => 1,
           			'container'         => 'div',
           			'container_class'   => 'collapse navbar-collapse',
-          			'container_id'      => 'bs-example-navbar-collapse-1',
+          			'container_id'      => 'navbarCollapse',
           			'menu_class'        => 'nav navbar-nav',
           			'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
           			'walker'            => new WP_Bootstrap_Navwalker(),

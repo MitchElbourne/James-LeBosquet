@@ -5,6 +5,13 @@ header.main {
   .navbar {
     display: flex;
     justify-content: space-between;
+    padding: 0;
+    .menu-text {
+      font-family: 'Grotesk-Rg';
+    }
+    .menu-icon {
+
+    }
     .branding {
       flex: 0 0 auto;
       margin: 0 auto 0 0;
@@ -18,7 +25,6 @@ header.main {
       }
     }
     ul {
-      // border: 1px solid red;
       display: flex;
       justify-content: flex-end;
       // flex-direction: row-reverse;
@@ -26,17 +32,26 @@ header.main {
       max-width: 46rem;
       li {
         padding: 0 1.55em 1.3rem 1.55em;
-        &.active {
-
-        }
         a {
-          // border: 1px solid green;
           text-transform: uppercase;
-
           color: $black;
           font-family: 'Grotesk-Lt';
           letter-spacing: 2px;
           white-space: nowrap;
+        }
+      }
+    }
+
+    @media only screen and (max-width: 992px) {
+      ul {
+        margin: 0.3rem auto 0 auto;
+        max-width: 100%;
+        background-color: rgba($white, 0.9);
+        li {
+          a {
+            // border: 1px solid green;
+            text-align: center;
+          }
         }
       }
     }
