@@ -2,16 +2,13 @@
   .testimonial:nth-child(odd) {
     flex-direction: row-reverse;
     display: flex;
-    justify-content: space-between;
-    .imagecolumn {
-      margin: 0;
-    }
   }
   .testimonial {
+    justify-content: space-between;
+    margin: 0 0 2em;
     .content {
       align-self: center;
     }
-    margin: 0 0 2em;
     h2 {
       font-family: 'Grotesk-Bd';
       font-size: 2.5em;
@@ -31,17 +28,23 @@
       img {
         width: 100%;
         max-width: 20em;
-        margin-top: 2em;
+        margin: 2em 0 0 0;
       }
     }
     @media only screen and (max-width: 768px) {
       flex-direction: column-reverse;
       &:nth-child(odd) {
+        padding: 0;
         flex-direction: column-reverse;
-        display: flex;
-        justify-content: space-between;
-        .imagecolumn {
-          margin: 0;
+      }
+      .imagecolumn {
+        width: 80%;
+        margin: auto;
+        .img-wrapper {
+          width: 100%;
+          img {
+            margin: auto;
+          }
         }
       }
     }

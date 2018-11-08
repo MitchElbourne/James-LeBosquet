@@ -26,7 +26,7 @@ while(have_posts()) {
                 the_row();
                 $image = get_sub_field('testimonial_image') ?>
                   <div class="testimonial row">
-                    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 content">
+                    <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 content">
                       <h2><?php the_title(); ?></h2>
                       <h3><?php the_sub_field('testimonial_title'); ?></h3>
                       <p><?php the_sub_field('testimonial_business'); ?></p>
@@ -34,7 +34,7 @@ while(have_posts()) {
                     </div><!--col-->
                         <?php
                         if ($image) { ?>
-                          <div class="col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-12 imagecolumn">
+                          <div class="col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12 imagecolumn">
                             <div class="img-wrapper">
                               <img alt="<?php the_title();  ?>" src="<?php the_sub_field('testimonial_image'); ?>" width="360" height="360">
                             </div>
