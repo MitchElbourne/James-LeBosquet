@@ -12,6 +12,8 @@ function jamesLBRequirements() {
   wp_register_script('jquery-script-ui', home_url() . '/wp-content/themes/JamesLB-Theme/js/jquery-ui.js', array( 'jquery' ));
   wp_enqueue_script('jquery-script-ui');
   wp_enqueue_style('main_style', get_stylesheet_uri());
+  //Custom JS
+  wp_enqueue_script('main_script', home_url() . '/wp-content/themes/JamesLB-Theme/js/scripts.js', array('jquery'), microtime(), true);
 }
 
 function website_features() {

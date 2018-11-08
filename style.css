@@ -1369,36 +1369,8 @@ footer.main .copyright-credit {
   }
 }
 
-.hairstyling .online-booking form .form-cta {
-  font-family: 'Grotesk-Bd';
-  color: rgba(32, 32, 32, 0.25);
-  background-color: transparent;
-  font-size: 2.2em;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 0.5em 0;
-  display: inline-block;
-  letter-spacing: 0;
-  transition: color 0.33s ease-out;
-}
-
-.hairstyling .online-booking form .form-cta:hover {
-  color: #202020;
-  transition: color 0.33s linear;
-}
-
-.hairstyling .online-booking form input[type=submit] {
-  float: right;
-}
-
-.hairstyling .online-booking form .icon-arrow-left,
-.hairstyling .online-booking form .icon-arrow-right {
-  height: 0.75em;
-  color: rgba(32, 32, 32, 0.25);
-}
-
-.hairstyling .online-booking form .note {
-  color: rgba(32, 32, 32, 0.5);
+.hairstyling .online-booking form .inactive {
+  display: none;
 }
 
 .education .col {

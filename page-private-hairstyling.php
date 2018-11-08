@@ -17,7 +17,14 @@ while(have_posts()) {
       </div><!-- col -->
       <div class="col-lg-offset-1 col-lg-6 col-md-offset-1 col-md-6 col-sm-12 col-xs-12 online-booking col">
         <h3>Online Booking</h3>
-        <form></form>
+        <!-- Form -->
+        <?php
+          $form = `'`. get_field('online_booking_form') . `'`;
+          echo do_shortcode($form);
+        ?>
+        <div class="buttons">
+          <button id="btn-next" class="form1">Next</button>
+        </div>
       </div><!-- col -->
     </div><!-- row -->
   </main><!-- hairstyling -->
