@@ -13,22 +13,19 @@ while(have_posts()) {
     <div id="tabs">
       <!-- Pulls in the Program titles and applies a link -->
       <nav class="sub-navigation">
-        <ul>
+        <ul class="nav nav-pills nav-fill">
           <?php
             $Programs = new WP_Query(array(
               'post_type' => 'program',
               'order' => 'ASC',
             ));
-
             while($Programs->have_posts()) {
               $Programs->the_post();
 
-              if (get_the_title() == 'Landing') { ?>
-               <li style="display: none"><a href="#<?php the_ID(); ?>"><?php echo the_title(); ?></a></li>
-             <?php } else { ?>
-               <li><a href="#<?php the_ID(); ?>"><?php echo the_title(); ?></a></li>
-             <?php }
-            };
+              if (get_the_title() != 'Landing') { ?>
+               <li class="nav-item"><a class="nav-link" href="#<?php the_ID(); ?>" data-toggle:"tab"><?php echo the_title(); ?></a></li>
+              <?php }
+              };
           ?>
         </ul>
       </nav><!-- sub-navigation -->
@@ -82,28 +79,28 @@ while(have_posts()) {
             ?>
           </div><!--education landing-->
         <?php } else { ?>
-          <div id="<?php the_ID(); ?>" class="education-course">
-            <div class="row">
-              <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 container">
-                <h1> <?php the_title(); ?></h1>
-                <h3>Details</h3>
-                <p class="intro"><?php the_field('course_title'); ?></p>
-                <?php the_field('course_field'); ?>
-              </div><!-- col -->
-            </div><!-- row -->
-            <div class="education-form">
-              <div class="row">
+          <div id="<?php the_ID(); ?>" class="education-course tab-content">
+            <div class="row tab-pane active">
                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 container">
-                  <h2>Let's get started!</h2>
-                  <p class="intro">Contact me to kick things off. This will be more fun than you think!</p>
-                  <p class="note">*Please fill in all the required fields.</p>
-                  <?php
-                  $form = `'`. get_field('course_form'). `'`;
-                  echo do_shortcode($form);
-                  ?>
+                  <h1> <?php the_title(); ?></h1>
+                  <h3>Details</h3>
+                  <p class="intro"><?php the_field('course_title'); ?></p>
+                  <?php the_field('course_field'); ?>
                 </div><!-- col -->
               </div><!-- row -->
-            </div><!-- form -->
+              <div class="education-form">
+                <div class="row">
+                  <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 container">
+                    <h2>Let's get started!</h2>
+                    <p class="intro">Contact me to kick things off. This will be more fun than you think!</p>
+                    <p class="note">*Please fill in all the required fields.</p>
+                    <?php
+                    $form = `'`. get_field('course_form'). `'`;
+                    echo do_shortcode($form);
+                    ?>
+                  </div><!-- col -->
+                </div><!-- row -->
+              </div><!-- form -->
           </div><!-- education course -->
         <?php }
       } ?>
@@ -114,12 +111,6 @@ while(have_posts()) {
 
 
 </div><!-- stage -->
-
-  <script>
-  jQuery( function() {
-    jQuery( "#tabs" ).tabs();
-  } );
-  </script>
 
 <?php }
 

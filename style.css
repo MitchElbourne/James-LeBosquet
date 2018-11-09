@@ -1300,20 +1300,26 @@ footer.main .copyright-credit {
   transition: color 0.66s ease-out;
 }
 
-@media only screen and (max-width: 48em) {
+@media only screen and (max-width: 1200px) {
   .home a.cta h1 {
-    font-size: 4em;
+    font-size: 4.1em;
   }
 }
 
-@media only screen and (max-width: 30em) {
+@media only screen and (max-width: 768px) {
+  .home a.cta h1 {
+    font-size: 3.8em;
+  }
+}
+
+@media only screen and (max-width: 480px) {
   .home a.cta h1 {
     font-size: 3em;
     margin-top: 1em;
   }
 }
 
-@media only screen and (max-width: 22em) {
+@media only screen and (max-width: 352px) {
   .home a.cta h1 {
     font-size: 2.75em;
   }
@@ -1655,31 +1661,43 @@ footer.main .copyright-credit {
 
 .education-cta .content {
   padding: 1em 2em;
-  max-width: 40em;
+}
+
+.education-cta .content :nth-child(even) {
+  margin: 0 -2rem 0 0;
+}
+
+.education-cta .content h1 {
+  font-family: 'Grotesk-Bd';
+  letter-spacing: 0.125rem;
+}
+
+.education-cta .content p {
+  padding: 0 1rem 0 0;
 }
 
 .education-cta .content ul {
   list-style: none;
-  padding: 0;
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
 }
 
 .education-cta .content ul li {
-  display: inline-block;
+  display: flex;
   width: 45%;
   border-bottom: 2px solid rgba(245, 243, 241, 0.5);
-  margin: 0 1rem 0 1rem;
+  margin: 0 2rem 0 0;
 }
 
 .education-cta .content ul li a {
   display: block;
+  flex: 1 1 auto;
   color: #f5f3f1;
   font-family: 'Grotesk-Bd';
-  font-size: 1.25em;
+  font-size: 1.4rem;
   line-height: 1.5;
   padding: 0.5em 0.75em 0.5em 0;
-  margin-right: 2em;
   text-decoration: none;
   transition: all 0.5s ease-out;
 }
@@ -1689,20 +1707,4 @@ footer.main .copyright-credit {
   padding-right: 0.25em;
   background-color: rgba(245, 243, 241, 0.5);
   transition: background-color 0.5s linear, padding-left 0.33s ease-in, padding-right 0.33s ease-in;
-}
-
-@media only screen and (max-width: 30em) {
-  .education-cta .content ul li {
-    display: block;
-    width: 100%;
-  }
-  .education-cta .content ul li a {
-    margin-right: 0;
-  }
-}
-
-@media only screen and (max-width: 1300px) {
-  .education-cta .content ul li {
-    width: 100%;
-  }
 }

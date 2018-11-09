@@ -7,26 +7,35 @@
   }
   .content {
     padding: 1em 2em;
-    max-width: 40em;
+    :nth-child(even) {
+      // border: 1px solid red;
+      margin: 0 -2rem 0 0;
+    }
+    h1 {
+      font-family: 'Grotesk-Bd';
+      letter-spacing: 0.125rem;
+    }
+    p {
+      padding: 0 1rem 0 0;
+    }
     ul {
       list-style: none;
-      padding: 0;
       display: flex;
       flex-wrap: wrap;
+      padding: 0;
       li {
-        display: inline-block;
+        display: flex;
         width: 45%;
         border-bottom: 2px solid rgba($white, 0.5);
-        margin: 0 1rem 0 1rem;
+        margin: 0 2rem 0 0;
         a {
           display: block;
+          flex: 1 1 auto;
           color: $white;
           font-family: 'Grotesk-Bd';
-          font-size: 1.25em;
+          font-size: 1.4rem;
           line-height: 1.5;
-
           padding: 0.5em 0.75em 0.5em 0;
-          margin-right: 2em;
           text-decoration: none;
           transition: all 0.5s ease-out;
           &:hover, &:focus, &:active {
@@ -37,16 +46,6 @@
                         padding-left 0.33s ease-in,
                         padding-right 0.33s ease-in;
           }
-        }
-        @media only screen and (max-width : 30em) {
-          display: block;
-          width: 100%;
-          a {
-            margin-right: 0;
-          }
-        }
-        @media only screen and (max-width: 1300px) {
-          width: 100%;
         }
       }
     }
