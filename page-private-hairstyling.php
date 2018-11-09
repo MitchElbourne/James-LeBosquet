@@ -16,7 +16,7 @@ while(have_posts()) {
         <p><?php the_content(); ?></p>
       </div><!-- col -->
       <div class="col-lg-offset-1 col-lg-6 col-md-offset-1 col-md-6 col-sm-12 col-xs-12 online-booking col">
-        <h3>Online Booking</h3>
+        <h3>Online Booking Enquiry</h3>
         <!-- Form -->
         <?php
           $form = `'`. get_field('online_booking_form') . `'`;

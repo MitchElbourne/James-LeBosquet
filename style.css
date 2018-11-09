@@ -512,7 +512,9 @@ form label {
 form input[type="text"],
 form input[type="email"],
 form input[type="tel"],
-form input[type='select'] {
+form input[type="date"],
+form input[type="number"],
+form select {
   display: block;
   width: 100%;
   color: #202020;
@@ -1373,16 +1375,6 @@ footer.main .copyright-credit {
 .hairstyling .online-booking form .formgroup {
   display: flex;
   flex-direction: column;
-}
-
-.hairstyling .online-booking form select {
-  display: block;
-  border: none;
-  padding: 0;
-  background-color: rgba(245, 243, 241, 0);
-  font-family: 'Grotesk-Rg';
-  font-size: 2.5rem;
-  color: rgba(32, 32, 32, 0.25);
 }
 
 .hairstyling .online-booking form .buttons {

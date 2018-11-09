@@ -2,12 +2,14 @@ class OnlineBookingEnquiry {
   constructor() {
     this.form1 = jQuery('.form1');
     this.form2 = jQuery('.form2');
+    this.course = jQuery('.your-course');
     this.isOnForm1 = true;
     this.events();
   }
   //Events
   events () {
     jQuery('.buttons #btn-next').click(this.onClick.bind(this));
+    jQuery(this.course).on('change', 'select', this.onChange);
   }
   //Methods
   onClick() {
@@ -20,6 +22,9 @@ class OnlineBookingEnquiry {
       this.form2.addClass("inactive");
       this.isOnForm1 = true;
     }
+  }
+  onChange() {
+    jQuery('select option:first').css('opacity: 0.5');
   }
 }
 

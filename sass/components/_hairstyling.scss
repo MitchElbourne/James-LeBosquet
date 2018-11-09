@@ -24,21 +24,10 @@
         margin-top: 2em;
       }
     }
-
     form {
       .formgroup {
         display: flex;
         flex-direction: column;
-
-      }
-      select {
-        display: block;
-        border: none;
-        padding: 0;
-        background-color: rgba($white, 0);
-        font-family: 'Grotesk-Rg';
-        font-size: 2.5rem;
-        color: rgba($black, 0.25);
       }
       .buttons {
         display: flex;
