@@ -974,7 +974,7 @@ a {
 
 /* --- Global Style --- */
 main {
-  padding: 4em 0;
+  padding: 3em 0;
 }
 
 main header {
@@ -1074,7 +1074,8 @@ a:hover {
   margin-bottom: 2em;
 }
 
-.sub-navigation ul {
+.sub-navigation .nav {
+  border: none;
   display: flex;
   align-items: stretch;
   align-content: center;
@@ -1084,17 +1085,17 @@ a:hover {
 }
 
 @media only screen and (max-width: 750px) {
-  .sub-navigation ul {
+  .sub-navigation .nav {
     flex-wrap: wrap;
   }
 }
 
-.sub-navigation ul li {
+.sub-navigation .nav .nav-item {
   list-style: none;
   flex: 1 1 auto;
 }
 
-.sub-navigation ul li a {
+.sub-navigation .nav .nav-item .nav-link {
   display: block;
   width: 100%;
   height: 100%;
@@ -1106,10 +1107,13 @@ a:hover {
   text-align: center;
   line-height: 1.13;
   transition: background-color 0.5s ease-out;
+  border-radius: 0;
+  border: none;
 }
 
-.sub-navigation ul li a:hover, .sub-navigation ul li a:focus, .sub-navigation ul li a:active, .sub-navigation ul li a.active {
+.sub-navigation .nav .nav-item .nav-link:hover, .sub-navigation .nav .nav-item .nav-link:focus, .sub-navigation .nav .nav-item .nav-link:active, .sub-navigation .nav .nav-item .nav-link.active {
   background-color: rgba(32, 32, 32, 0.5);
+  border: none;
   transition: background-color 0.33s linear;
 }
 
@@ -1707,4 +1711,12 @@ footer.main .copyright-credit {
   padding-right: 0.25em;
   background-color: rgba(245, 243, 241, 0.5);
   transition: background-color 0.5s linear, padding-left 0.33s ease-in, padding-right 0.33s ease-in;
+}
+
+@media only screen and (max-width: 575px) {
+  .education-cta {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }

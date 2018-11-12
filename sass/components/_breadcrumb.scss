@@ -8,7 +8,6 @@
   .content {
     padding: 1em 2em;
     :nth-child(even) {
-      // border: 1px solid red;
       margin: 0 -2rem 0 0;
     }
     h1 {
@@ -49,5 +48,10 @@
         }
       }
     }
+  }
+  @media only screen and (max-width: 575px) {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column-reverse;
   }
 }

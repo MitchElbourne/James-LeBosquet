@@ -17,7 +17,7 @@
       while($Programs->have_posts()) {
         $Programs->the_post();
 
-        if (get_the_title() == 'Landing') { ?>
+        if (get_the_ID() == 49) { ?>
        <?php } else { ?>
          <li><a href="/education#<?php the_ID(); ?>"><?php the_title(); ?></a></li>
        <?php }
