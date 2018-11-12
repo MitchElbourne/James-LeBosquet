@@ -2,14 +2,13 @@
 //General site sheets (.js and .css)
 function jamesLBRequirements() {
   //Bootstrap css
-  wp_enqueue_style('bootstrap-css', '//stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css');
+  wp_enqueue_style('bootstrap-css', get_theme_file_uri('/css/bootstrap.min.css'));
   //Bootstrap JS
-  wp_register_script('bootstrap-js', '//stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js', array('jquery'));
-  wp_enqueue_script('bootstrap-js');
+  wp_enqueue_script('bootstrap-js', get_theme_file_uri('/js/bootstrap.min.js'), array('jquery'), microtime(), true);
   //Custom CSS
   wp_enqueue_style('main_style', get_stylesheet_uri());
   //Custom JS
-  wp_enqueue_script('main_script', home_url() . '/wp-content/themes/JamesLB-Theme/js/scripts.js', array('jquery'), microtime(), true);
+  wp_enqueue_script('main_script', get_theme_file_uri('/js/scripts.js'), array('jquery'), microtime(), true);
 }
 
 //Enqueue scipts and stylesheets
