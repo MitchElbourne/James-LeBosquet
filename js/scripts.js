@@ -28,4 +28,18 @@ class OnlineBookingEnquiry {
   }
 }
 
+class MenuIcon {
+  constructor() {
+    this.events();
+  }
+  events() {
+    jQuery('.navbar-toggler, #nav-icon3').click(this.onClick);
+  }
+
+  onClick() {
+    jQuery('#nav-icon3').toggleClass('open');
+  }
+}
+
 var onlinebookingenquiry = new OnlineBookingEnquiry();
+var menuicon = new MenuIcon();

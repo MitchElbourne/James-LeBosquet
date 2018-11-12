@@ -6,6 +6,78 @@ header.main {
     display: flex;
     justify-content: space-between;
     padding: 0;
+    .navbar-toggler {
+      #nav-icon3 {
+        width: 60px;
+        height: 45px;
+        position: relative;
+        margin: 50px auto;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+      }
+      #nav-icon3 span {
+        display: block;
+        position: absolute;
+        height: 9px;
+        width: 100%;
+        background: $black;
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out;
+      }
+      #nav-icon3 span:nth-child(1) {
+        top: 0px;
+      }
+
+      #nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
+        top: 18px;
+      }
+
+      #nav-icon3 span:nth-child(4) {
+        top: 36px;
+      }
+
+      #nav-icon3.open span:nth-child(1) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
+      }
+
+      #nav-icon3.open span:nth-child(2) {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+
+      #nav-icon3.open span:nth-child(3) {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+      }
+
+      #nav-icon3.open span:nth-child(4) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
+      }
+    }
     .menu-text {
       font-family: 'Grotesk-Rg';
     }
@@ -13,10 +85,10 @@ header.main {
       padding: 0;
       width: 150px;
       height: 150px;
-      transition: opacity 0.33s ease-out;
+      transition: opacity 1s ease-out;
       &:hover {
         opacity: 0.9;
-        transition: opacity 1s ease-out;
+        transition: opacity 1s ease-in;
       }
     }
     ul {
@@ -45,11 +117,25 @@ header.main {
       ul {
         margin: 0.3rem auto 0 auto;
         max-width: 100%;
-        background-color: rgba($white, 0.9);
+        background-color: rgba($white, 1);
         li {
+          padding: 0;
+          transition: background 300ms linear;
           a {
-            // border: 1px solid green;
+            width: 100%;
+            height: 100%;
+            padding: 1rem;
             text-align: center;
+            transition: color 300ms linear;
+          }
+          &:hover, &.active {
+            opacity: 0.9;
+            background-color: rgba($black, 1);
+            transition: background 300ms linear;
+            a {
+              color: $white;
+              transition: color 300ms linear;
+            }
           }
         }
       }

@@ -83,8 +83,8 @@ while(have_posts()) {
                 <?php
               }
             } ?>
+            <?php get_template_part('template-parts/breadcrumb'); ?>
           </div>
-          <?php get_template_part('template-parts/breadcrumb'); ?>
         <?php } else { ?>
           <div class="tab-pane fade education-course" id="<?php echo $title; ?>" role="tabpanel" aria-labelledby="<?php echo $title; ?>-tab">
             <div class="row tab-pane">

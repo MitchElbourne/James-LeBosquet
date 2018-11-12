@@ -17,7 +17,12 @@
           	<!-- Brand and toggle get grouped for better mobile display -->
             <a class="branding navbar-brand" href="<?php echo site_url('/'); ?>"><img src="<?php echo get_theme_file_uri("assets/images/jameslebosquet-logo.svg"); ?>" alt="James LeBosquet logo"></a>
           	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          		<span class="menu-text"><img class="menu-icon" src="<?php echo get_theme_file_uri('assets/images/navbarIcon.svg'); ?>" alt="Navigation Icon" />Menu</span>
+          		<div id="nav-icon3">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
           	</button>
           		<?php
           		wp_nav_menu( array(
