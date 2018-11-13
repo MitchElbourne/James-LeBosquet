@@ -8,6 +8,8 @@ $links->the_post();
 
 ?>
 
+</div>
+
 <footer id="footer" class="main">
   <div class="row bottom-md">
     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 connect-reallife">

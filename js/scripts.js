@@ -1,15 +1,3 @@
-jQuery('.PersonalCoachingWorkshop').click(function () {
-    setTimeout(function () {
-
-      console.log('wow');
-    }, 10000);
-    var tabId = window.location.hash;
-
-    jQuery("#PersonalCoachingWorkshop-tab").find('a[href=' + tabId + ']').tab('show');
-
-});
-
-
 // For controlling the form logic
 var isOnForm1 = true;
 var form1 = jQuery('.form1');

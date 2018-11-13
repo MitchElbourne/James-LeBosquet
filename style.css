@@ -907,6 +907,9 @@ html {
 }
 
 html body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
   height: 100%;
 }
 
@@ -1035,6 +1038,10 @@ a:hover {
   text-decoration: none;
 }
 
+.global-main {
+  flex: 1;
+}
+
 .nav-primary nav {
   flex: 1 1 auto;
   display: flex;
@@ -1072,8 +1079,11 @@ a:hover {
   transition: color 0.33s linear;
 }
 
+.sub-navigation {
+  margin-bottom: 2em;
+}
+
 .sub-navigation .nav {
-  border: none;
   display: flex;
   align-items: stretch;
   align-content: center;
@@ -1088,12 +1098,12 @@ a:hover {
   }
 }
 
-.sub-navigation .nav .nav-item {
+.sub-navigation .nav li {
   list-style: none;
   flex: 1 1 auto;
 }
 
-.sub-navigation .nav .nav-item .nav-link {
+.sub-navigation .nav li a {
   display: block;
   width: 100%;
   height: 100%;
@@ -1105,27 +1115,25 @@ a:hover {
   text-align: center;
   line-height: 1.13;
   transition: background-color 0.5s ease-out;
-  border-radius: 0;
-  border: none;
 }
 
-.sub-navigation .nav .nav-item .nav-link:hover, .sub-navigation .nav .nav-item .nav-link:focus, .sub-navigation .nav .nav-item .nav-link:active, .sub-navigation .nav .nav-item .nav-link.active {
+.sub-navigation .nav li a:hover, .sub-navigation .nav li a:focus, .sub-navigation .nav li a:active, .sub-navigation .nav li a.active {
   background-color: rgba(32, 32, 32, 0.5);
-  border: none;
   transition: background-color 0.33s linear;
 }
 
 @media only screen and (max-width: 970px) {
-  .sub-navigation ul {
+  ul {
     flex-wrap: wrap;
   }
-  .sub-navigation ul li {
+  ul li {
     min-width: 50%;
+    display: block;
   }
 }
 
 @media only screen and (max-width: 740px) {
-  .sub-navigation ul li {
+  ul li {
     min-width: 100%;
   }
 }

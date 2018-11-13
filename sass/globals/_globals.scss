@@ -16,6 +16,9 @@ html {
   height: 100%;
   overflow-y: scroll;
   body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
     height: 100%;
     #root {
       height: 100%;
@@ -124,4 +127,9 @@ a {
   &:hover {
     text-decoration: none;
   }
+}
+
+
+.global-main {
+  flex: 1;
 }
