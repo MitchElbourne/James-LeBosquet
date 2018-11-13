@@ -7,11 +7,12 @@ header.main {
     justify-content: space-between;
     padding: 0;
     .navbar-toggler {
+      padding: 0;
+      align-content: center;
       #nav-icon3 {
         width: 60px;
-        height: 45px;
+        height: 3rem;
         position: relative;
-        margin: 50px auto;
         -webkit-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
         -o-transform: rotate(0deg);
@@ -25,7 +26,7 @@ header.main {
       #nav-icon3 span {
         display: block;
         position: absolute;
-        height: 9px;
+        height: 8px;
         width: 100%;
         background: $black;
         border-radius: 9px;

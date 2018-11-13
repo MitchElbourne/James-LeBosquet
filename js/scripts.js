@@ -33,7 +33,7 @@ class MenuIcon {
     this.events();
   }
   events() {
-    jQuery('.navbar-toggler, #nav-icon3').click(this.onClick);
+    jQuery('#nav-icon3').click(this.onClick);
   }
 
   onClick() {
