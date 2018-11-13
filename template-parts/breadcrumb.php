@@ -16,10 +16,11 @@
       // Pulls in the programs and lists them in the breadcrumb
       while($Programs->have_posts()) {
         $Programs->the_post();
+        $title = str_replace(' ', '', get_the_title());
 
         if (get_the_ID() == 49) { ?>
        <?php } else { ?>
-         <li><a href="/education#<?php the_ID(); ?>"><?php the_title(); ?></a></li>
+         <li><a class="<?php echo $title; ?>" href=""><?php the_title(); ?></a></li>
        <?php }
 
       };

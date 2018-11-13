@@ -1468,14 +1468,14 @@ footer.main .copyright-credit {
   margin: 0.2em 0 1em 0;
 }
 
-.hairstyling .online-booking form .formgroup {
-  display: flex;
-  flex-direction: column;
-}
-
 .hairstyling .online-booking form .buttons {
   display: flex;
   justify-content: space-between;
+  padding: 10px;
+}
+
+.hairstyling .online-booking form .buttons .btn-next {
+  margin-left: auto;
 }
 
 .hairstyling .online-booking form .buttons input[type="submit"], .hairstyling .online-booking form .buttons .btn {
@@ -1487,17 +1487,25 @@ footer.main .copyright-credit {
   line-height: 1.36;
   letter-spacing: normal;
   text-transform: uppercase;
-  height: auto;
   width: auto;
 }
 
 .hairstyling .online-booking form .buttons input[type="submit"] .tick, .hairstyling .online-booking form .buttons .btn .tick {
-  font-family: 'Grotesk';
-  font-size: 3rem;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50%;
+  width: 2.2rem;
 }
 
-.hairstyling .online-booking form .buttons #btn-next {
-  margin-top: -0.3rem;
+.hairstyling .online-booking form .buttons .btn-next .tick {
+  background-image: url("assets/images/backarrownext.svg");
+  transform: rotate(180deg);
+}
+
+.hairstyling .online-booking form .buttons .btn-back .tick {
+  background-image: url("assets/images/backarrow.svg");
 }
 
 .hairstyling .online-booking form .inactive {

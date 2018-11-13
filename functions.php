@@ -10,7 +10,7 @@ function jamesLBRequirements() {
   //Custom JS
   wp_enqueue_script('main_script', get_theme_file_uri('/js/scripts.js'), array('jquery'), microtime(), true);
 }
-
+add_filter( 'wpcf7_autop_or_not', '__return_false' );
 //Enqueue scipts and stylesheets
 add_action('wp_enqueue_scripts', 'jamesLBRequirements');
 
