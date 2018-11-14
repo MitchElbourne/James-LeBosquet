@@ -30,10 +30,9 @@
   }
 }
 
-
 .sub-navigation {
   margin-bottom: 2em;
-  .nav {
+   .nav {
     display: flex;
     align-items: stretch;
     align-content: center;
@@ -66,19 +65,3 @@
     }
   }
 }
-  @media only screen and (max-width: 970px) {
-    ul {
-      flex-wrap: wrap;
-      li {
-        min-width: 50%;
-        display: block;
-      }
-    }
-  }
-  @media only screen and (max-width: 740px) {
-    ul {
-      li {
-        min-width: 100%;
-      }
-    }
-  }

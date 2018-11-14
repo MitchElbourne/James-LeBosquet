@@ -13,8 +13,7 @@ jQuery('#btn-next').live('click', function() {
     isOnForm1 = true;
   }
 });
-
-
+// BUG: Help
 //  For controlling the height of the forms
 // TODO: Make forms dynamic using array
 jQuery(document).ready(function() {
@@ -29,4 +28,15 @@ jQuery(document).ready(function() {
 // For controlling the click function of the navbar menu
 jQuery('#nav-icon3').click(function() {
   jQuery('#nav-icon3').toggleClass('open');
+});
+
+// Collapse navbar menu if clicked outside of the nav area
+jQuery('body').bind('click', function(e) {
+    if(jQuery(e.target).closest('.collapse').length == 0) {
+        var opened = jQuery('.navbar-collapse').hasClass('show');
+        if ( opened === true ) {
+            jQuery('.navbar-collapse').collapse('hide');
+            jQuery('#nav-icon3').toggleClass('open');
+        }
+    }
 });

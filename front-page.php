@@ -14,7 +14,7 @@ while(have_posts()){
           <h1>NYC Private Hairstyling</h1>
           <h2>Book an Appointment</h2>
         </a>
-        <a class="cta" href="<?php echo site_url('/education'); ?>">
+        <a class="cta" href="<?php echo site_url('/programs/overview'); ?>">
           <h1>In Salon Education</h1>
           <h2>View Courses</h2>
         </a>
