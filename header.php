@@ -38,4 +38,4 @@
           		?>
           </nav>
         </header><!-- header -->
-<div class="global-main">
+        <div class="global-main">

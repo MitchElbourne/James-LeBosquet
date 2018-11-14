@@ -11,7 +11,6 @@
     li {
       display: inline-block;
       list-style: none;
-      border: 1px solid gold;
       a {
         display: inline-block;
         text-transform: uppercase;
@@ -21,7 +20,6 @@
         letter-spacing: 2px;
         white-space: nowrap;
         transition: color 0.5s ease-out;
-        border: 1px solid red;
         &:hover,
         &.active {
           color: rgba($black, 0.5);
@@ -60,7 +58,7 @@
         text-align: center;
         line-height: 1.13;
         transition: background-color 0.5s ease-out;
-        &:hover, &:focus, &:active, &.active {
+        &:hover, &:focus, &:active, &.active, .active {
           background-color: rgba($black, 0.5);
           transition: background-color 0.33s linear;
         }

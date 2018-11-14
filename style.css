@@ -1059,7 +1059,6 @@ a:hover {
 .nav-primary nav ul li {
   display: inline-block;
   list-style: none;
-  border: 1px solid gold;
 }
 
 .nav-primary nav ul li a {
@@ -1071,7 +1070,6 @@ a:hover {
   letter-spacing: 2px;
   white-space: nowrap;
   transition: color 0.5s ease-out;
-  border: 1px solid red;
 }
 
 .nav-primary nav ul li a:hover, .nav-primary nav ul li a.active {
@@ -1117,7 +1115,7 @@ a:hover {
   transition: background-color 0.5s ease-out;
 }
 
-.sub-navigation .nav li a:hover, .sub-navigation .nav li a:focus, .sub-navigation .nav li a:active, .sub-navigation .nav li a.active {
+.sub-navigation .nav li a:hover, .sub-navigation .nav li a:focus, .sub-navigation .nav li a:active, .sub-navigation .nav li a.active, .sub-navigation .nav li a .active {
   background-color: rgba(32, 32, 32, 0.5);
   transition: background-color 0.33s linear;
 }
@@ -1168,6 +1166,10 @@ header.main .navbar .navbar-toggler #nav-icon3 {
   -o-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   cursor: pointer;
+}
+
+header.main .navbar .navbar-toggler:focus, header.main .navbar .navbar-toggler:active {
+  outline: none;
 }
 
 header.main .navbar .navbar-toggler #nav-icon3 span {
@@ -1252,6 +1254,7 @@ header.main .navbar ul {
 
 header.main .navbar ul li {
   padding: 0 1.55em 1.3rem 1.55em;
+  margin: 0.5rem 0 0.5rem 0;
 }
 
 header.main .navbar ul li a {
@@ -1490,7 +1493,7 @@ footer.main .copyright-credit {
   padding: 0;
   color: rgba(32, 32, 32, 0.25);
   background-color: rgba(245, 243, 241, 0);
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: 'Grotesk-Bd';
   line-height: 1.36;
   letter-spacing: normal;

@@ -20,7 +20,7 @@
 
         if (get_the_ID() == 49) { ?>
        <?php } else { ?>
-         <li><a class="<?php echo $title; ?>" href=""><?php the_title(); ?></a></li>
+         <li><a class="<?php echo $title; ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
        <?php }
 
       };

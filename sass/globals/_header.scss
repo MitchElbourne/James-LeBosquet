@@ -23,6 +23,9 @@ header.main {
         transition: .5s ease-in-out;
         cursor: pointer;
       }
+      &:focus, &:active {
+        outline: none;
+      }
       #nav-icon3 span {
         display: block;
         position: absolute;
@@ -99,6 +102,7 @@ header.main {
       max-width: 46rem;
       li {
         padding: 0 1.55em 1.3rem 1.55em;
+        margin: 0.5rem 0 0.5rem 0;
         a {
           text-transform: uppercase;
           color: $black;
