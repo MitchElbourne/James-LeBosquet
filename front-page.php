@@ -7,7 +7,7 @@ while(have_posts()){
 ?>
 <div class="stage">
   <main class="home">
-    <img class="home-bg-img" alt="Homepage Background Image" src="<?php echo get_theme_file_uri("assets/images/site-background-loraine.jpg"); ?>">
+    <img class="home-bg-img" alt="Homepage Background Image" src="<?php echo get_theme_file_uri("assets/images/site-background-lola.jpg"); ?>">
     <div class="row">
       <div class="col-lg-6 col-md-9 col-sm-10 col-xs-12 col">
         <a class="cta" href="<?php echo site_url('/private-hairstyling'); ?>">

@@ -25,7 +25,7 @@
               </div>
           	</button>
           		<?php
-          		wp_nav_menu( array(
+          		wp_nav_menu(array(
           			'theme_location'    => 'primary',
           			'depth'             => 1,
           			'container'         => 'div',
@@ -34,7 +34,7 @@
           			'menu_class'        => 'nav navbar-nav',
           			'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
           			'walker'            => new WP_Bootstrap_Navwalker(),
-          		) );
+          		));
           		?>
           </nav>
         </header><!-- header -->

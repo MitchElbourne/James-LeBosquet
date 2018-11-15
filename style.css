@@ -1084,41 +1084,6 @@ a:hover {
   flex: 1;
 }
 
-.nav-primary nav {
-  flex: 1 1 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 1em 0;
-}
-
-.nav-primary nav ul {
-  margin: 0;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.nav-primary nav ul li {
-  display: inline-block;
-  list-style: none;
-}
-
-.nav-primary nav ul li a {
-  display: inline-block;
-  text-transform: uppercase;
-  padding: 1em 1.5em;
-  color: #202020;
-  font-family: 'Grotesk-Lt';
-  letter-spacing: 2px;
-  white-space: nowrap;
-  transition: color 0.5s ease-out;
-}
-
-.nav-primary nav ul li a:hover, .nav-primary nav ul li a.active {
-  color: rgba(32, 32, 32, 0.5);
-  transition: color 0.33s linear;
-}
-
 .sub-navigation {
   margin-bottom: 2em;
 }
@@ -1847,6 +1812,7 @@ footer.main .copyright-credit {
 .education-cta {
   color: #f5f3f1;
   background-color: #202020;
+  margin-bottom: -10rem;
 }
 
 .education-cta .img-cta {
