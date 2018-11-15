@@ -32,7 +32,12 @@
       }
       .bottom-image {
         width: 100%;
+        img {
+          padding: 0;
+          margin: 0;
+        }
       }
+
       > .row:nth-of-type(odd) {
         flex-direction: row-reverse;
       }
@@ -49,8 +54,9 @@
             margin: 1rem 0 1rem 0;
           }
           .edu-img {
+            display: block;
             img {
-              width: 50%;
+              width: 70%;
               margin: 0 auto;
             }
           }

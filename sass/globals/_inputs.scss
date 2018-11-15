@@ -1,5 +1,6 @@
 form {
   .formgroup {
+    display: block;
     border-left: 2px solid $black;
     padding: 0.25em 1em 0.5em;
     margin: 0 0 1em;
@@ -27,7 +28,7 @@ form {
     color: $black;
     background: transparent;
     border: none;
-    font-size: 3em;
+    font-size: 2em;
     font-family: 'Grotesk-Bd';
     outline: none;
   }
@@ -67,5 +68,38 @@ form {
     border: 2px solid rgba($black, 0.6);
     font-family: 'Grotesk-Bd';
     margin: 1rem 0 0 0;
+  }
+}
+
+#ui-datepicker-div {
+  .ui-datepicker-header, .ui-widget-header {
+    background: none;
+    background-color: $black;
+  }
+  .ui-slider-handle {
+    background: none;
+    background-color: $black;
+  }
+  td {
+    a {
+      background: none;
+      background-color: $black;
+      transition: background-color 200ms linear;
+      &:hover {
+        background-color: rgba($black, 0.5);
+        color: $black;
+        border: none;
+        transition: background-color 200ms linear;
+      }
+    }
+    .ui-state-highlight {
+      border: none;
+      background-color: rgba($black, 0.7);
+      color: rgba($black, 0.9);
+    }
+    .ui-state-active {
+      background-color: $white;
+      border: none;
+    }
   }
 }

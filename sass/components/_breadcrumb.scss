@@ -1,7 +1,6 @@
 .education-cta {
   color: $white;
   background-color: $black;
-  margin: 4em 0;
   .img-cta {
     min-height: 20em;
   }
@@ -49,9 +48,7 @@
       }
     }
   }
-  @media only screen and (max-width: 575px) {
-    border: 1px solid red;
+  @media only screen and (max-width: 768px) {
     display: flex;
-    flex-direction: column-reverse;
   }
 }

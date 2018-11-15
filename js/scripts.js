@@ -1,4 +1,4 @@
-// For controlling the form logic
+// For controlling the form size
 var isOnForm1 = true;
 var form1 = jQuery('.form1');
 var form2 = jQuery('.form2');
@@ -26,8 +26,13 @@ jQuery(document).ready(function() {
 });
 
 // For controlling the click function of the navbar menu
+var navbarOpen = false;
 jQuery('#nav-icon3').click(function() {
-  jQuery('#nav-icon3').toggleClass('open');
+  if (navbarOpen == false) {
+    jQuery('#nav-icon3').addClass('open');
+  } else {
+    jQuery('#nav-icon3').removeClass('open');
+  }
 });
 
 // Collapse navbar menu if clicked outside of the nav area
@@ -36,7 +41,7 @@ jQuery('body').bind('click', function(e) {
         var opened = jQuery('.navbar-collapse').hasClass('show');
         if ( opened === true ) {
             jQuery('.navbar-collapse').collapse('hide');
-            jQuery('#nav-icon3').toggleClass('open');
+            jQuery('#nav-icon3').removeClass('open');
         }
     }
 });

@@ -36,12 +36,9 @@
     display: flex;
     align-items: stretch;
     align-content: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0;
     margin: 0;
-    @media only screen and (max-width:750px) {
-      flex-wrap: wrap;
-    }
     li {
       list-style: none;
       flex: 1 1 auto;
@@ -61,6 +58,26 @@
           background-color: rgba($black, 0.5);
           transition: background-color 0.33s linear;
         }
+      }
+    }
+  }
+  @media only screen and (max-width: 1400px) {
+    ul {
+      flex-wrap: nowrap;
+    }
+  }
+  @media only screen and (max-width: 992px) {
+    ul {
+      flex-wrap: wrap;
+      li {
+        min-width: 50%;
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    ul{
+      li {
+        width: 100%;
       }
     }
   }

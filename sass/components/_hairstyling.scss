@@ -7,6 +7,7 @@
     font-family: 'Grotesk-Lt';
     font-size: 2.5em;
     line-height: 1.36;
+    padding-right: 3rem;
     strong {
       font-family: 'Grotesk-Bd';
       font-weight: normal;
@@ -14,8 +15,9 @@
     p {
       margin: 0;
     }
-    @media only screen and (max-width: 920px) {
+    @media only screen and (max-width: 1000px) {
       min-width: 100%;
+      padding: 0;
     }
   }
   .online-booking {
@@ -69,10 +71,10 @@
         display: none;
       }
     }
-    @media only screen and (min-width: 920px) {
+    @media only screen and (min-width: 1000px) {
       margin-left: 1.25rem;
     }
-    @media only screen and (max-width: 919px) {
+    @media only screen and (max-width: 999px) {
       margin: 2rem 0 0 0;
       border-top: 1px solid rgba($black, 1);
       padding-top: 2rem;
