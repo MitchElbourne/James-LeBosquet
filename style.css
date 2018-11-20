@@ -605,6 +605,15 @@ form .wpcf7-response-output {
   border: none;
 }
 
+#ui-datepicker-div .ui-datepicker-buttonpane .ui-datepicker-current {
+  display: none;
+}
+
+#ui-datepicker-div .ui-datepicker-buttonpane button {
+  background: none;
+  background-color: #202020;
+}
+
 /* --- Home --- */
 .home-bg-appear {
   opacity: 0.01;
@@ -1545,6 +1554,7 @@ footer.main .copyright-credit .legalbox div a:hover, footer.main .copyright-cred
   letter-spacing: normal;
   text-transform: uppercase;
   width: auto;
+  transition: color 200ms ease-out;
 }
 
 .hairstyling .online-booking form .buttons input[type="submit"] .tick, .hairstyling .online-booking form .buttons .btn .tick {
@@ -1554,6 +1564,11 @@ footer.main .copyright-credit .legalbox div a:hover, footer.main .copyright-cred
   background-size: cover;
   height: 50%;
   width: 2.2rem;
+}
+
+.hairstyling .online-booking form .buttons input[type="submit"]:hover, .hairstyling .online-booking form .buttons input[type="submit"]:active, .hairstyling .online-booking form .buttons .btn:hover, .hairstyling .online-booking form .buttons .btn:active {
+  color: #202020;
+  transition: color 200ms ease-in;
 }
 
 .hairstyling .online-booking form .buttons .btn-next .tick {

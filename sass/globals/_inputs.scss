@@ -106,4 +106,13 @@ form {
       border: none;
     }
   }
+  .ui-datepicker-buttonpane {
+    .ui-datepicker-current {
+      display: none;
+    }
+    button {
+      background: none;
+      background-color: $black;
+    }
+  }
 }

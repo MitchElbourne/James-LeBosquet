@@ -33,25 +33,6 @@ jQuery(window).on("orientationchange", function() {
   jQuery('.forms').css('height', largest + 'px');
 });
 
-// Controls the size of the forms after the buttons been clicked
-var beenclicked = false;
-jQuery('.submit').live("click", function () {
-  setTimeout(function () {
-    var form1 = 0, form2 = 0, largest = 0;
-    var pixelCount;
-    if (!beenclicked && jQuery('.wpcf7-not-valid-tip')) {
-      pixelCount = 70;
-    } else if (beenclicked) {
-      pixelCount = 0;
-    }
-    form1 = jQuery('.form1').outerHeight() + pixelCount;
-    form2 = jQuery('.form2').outerHeight() + pixelCount;
-    largest = Math.max.apply(null, [form1, form2]);
-    jQuery('.forms').css('height', largest + 'px');
-    beenclicked = true;
-  }, 300);
-});
-
 // For controlling the click function of the navbar menu
 var navbarOpen = false;
 jQuery('#nav-icon3').click(function() {
