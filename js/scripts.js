@@ -3,6 +3,7 @@ var isOnForm1 = true;
 var formleft = jQuery('.form1');
 var formright = jQuery('.form2');
 jQuery('#btn-next').live('click', function() {
+  console.log("click");
   if (isOnForm1) {
     formleft.addClass("inactive");
     formright.removeClass("inactive");
@@ -35,12 +36,14 @@ jQuery(window).on("orientationchange", function() {
 
 // For controlling the click function of the navbar menu
 var navbarOpen = false;
-jQuery('#nav-icon3').click(function () {
+jQuery('#nav-icon3').live("click", function () {
   console.log("hey");
   if (!navbarOpen) {
     jQuery('#nav-icon3').addClass('open');
+    navbarOpen == true;
   } else {
     jQuery('#nav-icon3').removeClass('open');
+    navbarOpen == false;
   }
 });
 
