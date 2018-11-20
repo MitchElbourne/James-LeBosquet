@@ -973,18 +973,11 @@ html body #root .app {
 
 .home-bg-img {
   position: fixed;
-  top: 9em;
+  bottom: 0;
   right: 0;
   z-index: -1;
   transition: opacity 0.66s linear;
-  max-height: 98%;
-}
-
-@media only screen and (min-width: 1200px) {
-  .home-bg-img {
-    position: fixed;
-    top: 8em;
-  }
+  max-height: 75%;
 }
 
 @media only screen and (max-width: 1199px) {
