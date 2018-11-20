@@ -540,7 +540,7 @@ form textarea {
 }
 
 form input[type="submit"] {
-  padding: 1.5em 3em;
+  padding: 1.5em 60px;
   color: #f5f3f1;
   background-color: #202020;
   border: 0;
