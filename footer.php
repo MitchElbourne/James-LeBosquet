@@ -19,16 +19,16 @@ $links->the_post();
     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 connect-digital">
       <a class="contact-email" href="mailto:james@jameslebosquet.com">james@jameslebosquet.com</a>
       <div class="social">
-           <a href="<?php echo "https://www.facebook.com/jlbhairdressing" ?>" target:"_blank">
+           <a onclick="window.open('https://www.facebook.com/jlbhairdressing','_blank');window.close();return false">
           <img src="<?php echo get_theme_file_uri("assets/images/social-facebook.svg"); ?>" alt="Icon Facebook">
         </a><!--
-        --><a href="<?php echo "http://instagram.com/jlbhair" ?>" target:"_blank">
+        --><a onclick="window.open('http://instagram.com/jlbhair','_blank');window.close();return false">
           <img src="<?php echo get_theme_file_uri("assets/images/social-instagram.svg"); ?>" alt="Icon Instagram">
         </a><!--
         --><a href="<?php echo "/" ?>" target:"_blank">
           <img src="<?php echo get_theme_file_uri("assets/images/social-linkedin.svg"); ?>" alt="Icon LinkedIn">
         </a><!--
-        --><a href="<?php echo "https://www.youtube.com/watch?v=pBOY_3Fjjko" ?>" target:"_blank">
+        --><a onclick="window.open('https://www.youtube.com/watch?v=pBOY_3Fjjko','_blank');window.close();return false">
           <img src="<?php echo get_theme_file_uri("assets/images/social-youtube.svg"); ?>" alt="Icon YouTube">
         </a>
 

@@ -35,8 +35,9 @@ jQuery(window).on("orientationchange", function() {
 
 // For controlling the click function of the navbar menu
 var navbarOpen = false;
-jQuery('#nav-icon3').click(function() {
-  if (navbarOpen == false) {
+jQuery('#nav-icon3').click(function () {
+  console.log("hey");
+  if (!navbarOpen) {
     jQuery('#nav-icon3').addClass('open');
   } else {
     jQuery('#nav-icon3').removeClass('open');

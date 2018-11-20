@@ -1095,6 +1095,7 @@ a:hover {
 
 .app .error-container h1 {
   font-weight: bold;
+  font-size: 3.5rem;
 }
 
 .app .error-container p {
@@ -1392,6 +1393,7 @@ footer.main .connect-digital .social {
 
 footer.main .connect-digital .social a {
   display: inline-block;
+  cursor: pointer;
   width: 1.5em;
   height: 1.5em;
   margin: 0 0.75em;
