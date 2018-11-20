@@ -7,6 +7,7 @@
     <?php
     $Programs = new WP_Query(array(
       'post_type' => 'program',
+      'orderby' => 'menu_order',
       'order' => 'ASC',
     ));
 
