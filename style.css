@@ -499,6 +499,7 @@ form .formgroup {
 form .formgroup .wpcf7-not-valid-tip {
   color: rgba(255, 0, 0, 0.7);
   font-family: 'Grotesk-Bd';
+  float: left;
 }
 
 form label {
@@ -566,6 +567,8 @@ form .wpcf7-response-output {
   border: 2px solid rgba(32, 32, 32, 0.6);
   font-family: 'Grotesk-Bd';
   margin: 1rem 0 0 0;
+  float: right;
+  position: absolute;
 }
 
 #ui-datepicker-div .ui-datepicker-header, #ui-datepicker-div .ui-widget-header {
@@ -1383,6 +1386,25 @@ footer.main .connect-digital .social a:hover, footer.main .connect-digital .soci
 footer.main .copyright-credit {
   margin: 4em 0 1em;
   font-size: 0.66em;
+}
+
+footer.main .copyright-credit .legalbox {
+  display: flex;
+  position: relative;
+}
+
+footer.main .copyright-credit .legalbox div {
+  padding: 0 0 0 1rem;
+}
+
+footer.main .copyright-credit .legalbox div a {
+  color: #202020;
+  transition: color 100ms linear;
+}
+
+footer.main .copyright-credit .legalbox div a:hover, footer.main .copyright-credit .legalbox div a:active {
+  color: rgba(32, 32, 32, 0.6);
+  transition: color 100ms linear;
 }
 
 .home .col {

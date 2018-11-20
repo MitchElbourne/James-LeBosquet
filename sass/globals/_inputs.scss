@@ -8,6 +8,7 @@ form {
     .wpcf7-not-valid-tip {
       color: rgba(red, 0.7);
       font-family: 'Grotesk-Bd';
+      float: left;
     }
   }
   label {
@@ -69,6 +70,8 @@ form {
     border: 2px solid rgba($black, 0.6);
     font-family: 'Grotesk-Bd';
     margin: 1rem 0 0 0;
+    float: right;
+    position: absolute;
   }
 }
 

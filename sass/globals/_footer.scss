@@ -37,7 +37,7 @@ footer.main {
         transition: color 0.33s linear;
       }
     }
-    
+
     .social {
       height: 1.5em;
       @media only screen and (max-width : 64em) {
@@ -60,9 +60,23 @@ footer.main {
       }
     }
   }
-
   .copyright-credit {
-     margin: 4em 0 1em;
-     font-size: 0.66em;
+    margin: 4em 0 1em;
+    font-size: 0.66em;
+    .legalbox {
+      display: flex;
+      position: relative;
+      div {
+        padding: 0 0 0 1rem;
+        a {
+          color: $black;
+          transition: color 100ms linear;
+          &:hover, &:active {
+            color: rgba($black, 0.6);
+            transition: color 100ms linear;
+          }
+        }
+      }
+    }
   }
 }

@@ -13,7 +13,8 @@ function jamesLBRequirements() {
 add_filter( 'wpcf7_autop_or_not', '__return_false' );
 //Enqueue scipts and stylesheets
 add_action('wp_enqueue_scripts', 'jamesLBRequirements');
-
+// Remove admin bar from page
+add_filter('show_admin_bar', '__return_false');
 //Custom Post-Types
 function website_post_types() {
   //Education program Post-Type

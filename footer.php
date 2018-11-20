@@ -5,7 +5,6 @@ $links = new WP_Query(array(
   'title' => 'Social Media Links'
 ));
 $links->the_post();
-
 ?>
 
 </div>
@@ -14,22 +13,22 @@ $links->the_post();
   <div class="row bottom-md">
     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 connect-reallife">
       <span class="site-title">James LeBosquet</span>
-      <span class="contact">Call 614 XXX-XXXX</span>
+      <span class="contact">646 535 JLBH (5524)</span>
       <span class="address">420 5th Ave, New York, NY 10037</span>
     </div><!-- row -->
     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 connect-digital">
       <a class="contact-email" href="mailto:james@jameslebosquet.com">james@jameslebosquet.com</a>
       <div class="social">
-           <a href="<?php echo get_field('facebook'); ?>">
+           <a href="<?php echo "https://www.facebook.com/jlbhairdressing" ?>" target:"_blank">
           <img src="<?php echo get_theme_file_uri("assets/images/social-facebook.svg"); ?>" alt="Icon Facebook">
         </a><!--
-        --><a href="<?php echo get_field('instagram'); ?>">
+        --><a href="<?php echo "http://instagram.com/jlbhair" ?>" target:"_blank">
           <img src="<?php echo get_theme_file_uri("assets/images/social-instagram.svg"); ?>" alt="Icon Instagram">
         </a><!--
-        --><a href="<?php echo get_field('linked_in'); ?>">
+        --><a href="<?php echo "/" ?>" target:"_blank">
           <img src="<?php echo get_theme_file_uri("assets/images/social-linkedin.svg"); ?>" alt="Icon LinkedIn">
         </a><!--
-        --><a href="<?php echo get_field('youtube'); ?>">
+        --><a href="<?php echo "https://www.youtube.com/watch?v=pBOY_3Fjjko" ?>" target:"_blank">
           <img src="<?php echo get_theme_file_uri("assets/images/social-youtube.svg"); ?>" alt="Icon YouTube">
         </a>
 
@@ -38,7 +37,10 @@ $links->the_post();
   </div><!-- row -->
   <div class="copyright-credit row">
     <div class="">© 2017 James LeBosquet. All rights reserved unless otherwise credited.</div>
-    <div class=""></div>
+    <div class="legalbox">
+      <div><a href="<?php echo site_url('/privacy-policy'); ?>">Privacy Policy</a></div>
+      <div><a href="<?php echo site_url('/terms-service'); ?>">Terms of Service</a></div>
+    </div>
   </div><!-- row -->
 </footer><!-- footer -->
 

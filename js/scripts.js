@@ -22,7 +22,6 @@ jQuery(document).ready(function() {
   form2 = jQuery('.form2').outerHeight() + 80;
   largest = Math.max.apply(null, [form1, form2]);
   jQuery('.forms').css('height', largest + 'px');
-  console.log(form1 + " " + form2 + " " +largest);
 });
 
 // For controlling form heights on orientation change
@@ -32,7 +31,6 @@ jQuery(window).on("orientationchange", function() {
   form2 = jQuery('.form2').outerHeight();
   largest = Math.max.apply(null, [form1, form2]);
   jQuery('.forms').css('height', largest + 'px');
-  console.log(form1 + " " + form2 + " " +largest);
 });
 
 // Controls the size of the forms after the buttons been clicked
@@ -50,7 +48,6 @@ jQuery('.submit').live("click", function () {
     form2 = jQuery('.form2').outerHeight() + pixelCount;
     largest = Math.max.apply(null, [form1, form2]);
     jQuery('.forms').css('height', largest + 'px');
-    console.log(form1 + " " + form2 + " " +largest);
     beenclicked = true;
   }, 300);
 });
