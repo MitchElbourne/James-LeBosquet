@@ -38,7 +38,7 @@ html {
   right: 0;
   z-index: -1;
   transition: opacity 0.66s linear;
-  max-height: 75%;
+  max-height: 80vh;
   @media only screen and (max-width : 1199px) {
     opacity: 0.66;
     transition: opacity 1s linear;
@@ -131,4 +131,25 @@ a {
 
 .global-main {
   flex: 1;
+}
+
+.app {
+  .error-container {
+    font-family: 'Grotesk-Rg';
+    h1 {
+      font-weight: bold;
+    }
+    p {
+      padding: 0.5rem 0 0.5rem 0;
+      a {
+        text-decoration: none;
+        color: rgba($black, 0.6);
+        transition: color 100ms ease-out;
+        &:hover {
+          color: rgba($black, 1);
+          transition: color 100ms ease-out;
+        }
+      }
+    }
+  }
 }

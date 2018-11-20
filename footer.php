@@ -7,7 +7,7 @@ $links = new WP_Query(array(
 $links->the_post();
 ?>
 
-</div>
+</div><!-- global main -->
 
 <footer id="footer" class="main">
   <div class="row bottom-md">
@@ -43,9 +43,9 @@ $links->the_post();
     </div>
   </div><!-- row -->
 </footer><!-- footer -->
+</div><!--container-->
 
 </div><!-- app -->
-
 </div><!-- root -->
 
 
